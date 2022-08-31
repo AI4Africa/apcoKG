@@ -7,11 +7,10 @@
 
 <http://data.apco.cm/onto>
   a owl:Ontology ;
-  owl:versionIRI <http://data.apco.cm/onto/1.0.0> ;
   dc:creator <http://atemezing.org>, <http://data.apco.cm/linkedin.com/in/jules-quentin-kouamo-99259921a>, <http://data.apco.cm/onto#linkedin.com/in/etienne-kouokam-18a24913> ;
-  dc:description "APCO est une ontologie a qui permet la description des termes des marchés publics"@fr, "APCO is an ontology a that allows the description of public procurement terms"@en ;
+  dc:description "APCO est une ontologie ayant pour but la description des termes des marchés publics"@fr, "APCO is an ontology that allows the description of public procurement terms"@en ;
   dc:title "African Public Contract Ontology"@en ;
-  dct:issued "2022-08-31";
+  dc:issued "2022-08-31";
   owl:versionInfo "1.0.0" .
 
 dc:creator a owl:AnnotationProperty .
@@ -21,7 +20,7 @@ dc:title
   rdfs:range xsd:string ;
   rdfs:domain <http://data.apco.cm/onto#Publication> .
 
-<http://data.apco.cm/onto#aPourMaîtreDOuvrage>
+<http://data.apco.cm/onto#aPourMaitreDOuvrage>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range <http://data.apco.cm/onto#MaîtreDOuvrage> ;
@@ -41,26 +40,26 @@ dc:title
   rdfs:range <http://data.apco.cm/onto#Prestataire> ;
   rdfs:comment "Property indicating to whom an owner assigns a tender"@fr, "Proprieté indiquant à qui un maître d'ouvrage attribue un appel d'offre"@fr .
 
-<http://data.apco.cm/onto#chefDeServiceDuMarché>
+<http://data.apco.cm/onto#chefDeServiceDuMarche>
   a owl:ObjectProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range <http://data.apco.cm/onto#ChefDeServiceDuMarché> ;
   rdfs:comment "property indicating the head of the market department of a public market"@en, "proprieté indiquant le chef de service du marché d'un marché public"@fr ;
-  rdfs:label "chefDuServiceDuMarché"@fr, "marketServiceManager"@en .
+  rdfs:label "Chef du Service du Marché"@fr, "market Service Manager"@en .
 
-<http://data.apco.cm/onto#estFinancéPar>
+<http://data.apco.cm/onto#estFinancePar>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range <http://data.apco.cm/onto#Financement> ;
   rdfs:comment "Property indicating the source of funding for a public contract"@en, "Propriété indiquant la source de financement d'un marché public"@fr ;
-  rdfs:label "estFinancéPar"@fr, "isFundingBy"@en .
+  rdfs:label "est Financé Par"@fr, "is Funded By"@en .
 
 <http://data.apco.cm/onto#faitUneOffre>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
   rdfs:domain <http://data.apco.cm/onto#Soumissionnaire> ;
   rdfs:range <http://data.apco.cm/onto#Offre> ;
   rdfs:comment "Property indicating the offer made by a bidder. (cardinality 0..1)"@en, "Proprieté indiquant l'offre faite par un soumissionnaire. (cardinalité 0..1)"@fr ;
-  rdfs:label "faitUneOffre"@fr, "makeAnOffer"@en .
+  rdfs:label "fait ne Offre"@fr, "make an Offer"@en .
 
 <http://data.apco.cm/onto#prestataire>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
@@ -110,7 +109,7 @@ dc:title
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:dateTime ;
   rdfs:comment "property indicating the publication date of a Publication"@en, "proprieté indiquant la date de publication d'une Publication"@fr ;
-  rdfs:label "dateDePublication"@fr, "publicationDate"@en .
+  rdfs:label "date de publication"@fr, "publication date"@en .
 
 <http://data.apco.cm/onto#dateDeSignature>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
@@ -176,7 +175,7 @@ dc:title
   rdfs:range xsd:string ;
   rdfs:label "acronymBuildingOwner"@en, "sigleMaîtreD'Ouvrage"@fr .
 
-<http://data.apco.cm/onto#sigleProcédure>
+<http://data.apco.cm/onto#sigleProcedure>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:string .
