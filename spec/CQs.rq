@@ -1,0 +1,35 @@
+### CQ1 - Quels sont les 100 derniers contrats attribués
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla>
+
+SELECT ?contrat ?date WHERE {
+{ ?contrat apco:sigleProcédure ?procedure FILTER regex(?procedure, "DEC-ATTR") } OPTIONAL
+{?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*")
+}
+?contrat apco:dateDePublication ?date
+}
+ORDER BY DESC(?date) LIMIT 100
+
+### CQ2 - Combien de contrat par type de procédure
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla>
+
+SELECT ?TypedeContrat (count(distinct ?contract) as ?nombre) WHERE {
+{?contract pc:procedureType ?TypedeContrat}
+}
+GROUP BY (?TypedeContrat)
+
+
+
+
