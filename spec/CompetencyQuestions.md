@@ -13,4 +13,4 @@
 11. [CQ11] Nombre de contrats par secteur d’activités?
 12. [CQ12] Quelles sont les autorités contractantes ayant passés des contrats avec les montants prévisionnels les plus élevés?
 13. [CQ13] Liste des contrats financés par la Banque Mondiale?
-14. [CQ14] Quel est le pourcentage de volume budg ́etaire des marchés pour chaque procédure?
+14. [CQ14] Quel est le pourcentage de volume budgétaire des marchés pour chaque procédure?
