@@ -1,12 +1,16 @@
 ### CQ1 - Quels sont les 100 derniers contrats attribués
 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX apco: <http://data.apco.cm/onto#>
-PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX pc: <http://purl.org/procurement/public-contracts#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX dbpedia: <https://dbpedia.org/ontology/>
-PREFIX geofla: <http://data.ign.fr/def/geofla>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT ?contrat ?date WHERE {
 { ?contrat apco:sigleProcédure ?procedure FILTER regex(?procedure, "DEC-ATTR") } OPTIONAL
@@ -17,19 +21,318 @@ SELECT ?contrat ?date WHERE {
 ORDER BY DESC(?date) LIMIT 100
 
 ### CQ2 - Combien de contrat par type de procédure
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX apco: <http://data.apco.cm/onto#>
-PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX pc: <http://purl.org/procurement/public-contracts#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX dbpedia: <https://dbpedia.org/ontology/>
-PREFIX geofla: <http://data.ign.fr/def/geofla>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT ?TypedeContrat (count(distinct ?contract) as ?nombre) WHERE {
 {?contract pc:procedureType ?TypedeContrat}
 }
 GROUP BY (?TypedeContrat)
 
+### CQ3 - Quels sont 100 les contrats avec les montants prévisionnels les plus élevés? 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT ?contrat ?budget WHERE {
+?contrat apco:montantPrévisionnelduMarché ?budget }
+ORDER BY DESC(?budget) LIMIT 100
+
+### CQ4 - Combien y a t’il de contrats par type de procédure?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT ?region (count(distinct ?contract) as ?nombre) 
+WHERE {
+?contract geofla:region ?regions. ?regions rdfs:label ?region
+}
+GROUP BY (?region)
+
+### CQ5 - Coût total des contrats attribués entre 2017 et 2019
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT (sum(distinct ?montant) as ?coût) WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:sigleProcédure ?procedure FILTER regex(?procedure, "DEC-ATTR") OPTIONAL
+{?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*")
+}
+?contrat apco:dateDePublication ?date.
+FILTER (?date >"2017-01-01"^^xsd:date && ?date <"2019-01-01"^^xsd:date ) }
 
 
+### CQ6 - Liste des entreprises ayant eu le contrat avec le plus de budget
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
+SELECT ?entreprise WHERE {
+?contrat apco:aPourPrestataire ?entreprise.
+?contrat apco:montantPrévisionnelduMarché ?budget }
+ORDER BY DESC(?budget) LIMIT 100
+
+
+### CQ7- Liste des entreprises ayant eu le contrat avec le plus de budget
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+
+SELECT (sum(distinct ?montant) as ?Coût) 
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:sigleProcédure ?procedure FILTER regex(?procedure, "DEC-ATTR") OPTIONAL
+{?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*")
+}
+{?contrat apco:aPourMaîtreDOuvrage ?maître_d_ouvrage.
+?maître_d_ouvrage apco:sigleMaîtreDOuvrage ?sigleM. FILTER (?sigleM ="SCDP" ) }
+OPTIONAL {
+?contrat pc:contractingAutority ?autorité_contractante. ?autorité_contractante apco:sigleAutoritéContractante ?sigleA.
+FILTER (?sigleA ="SCDP" ) }
+}
+
+### CQ8- Nombre de publications fait en 2016 classé par la nature de la prestation
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT ?Nature_de_prestation (count(distinct ?contract) as ?nombre_par_nature) 
+WHERE {
+?contract apco:naturePrestation ?Nature_de_prestation. ?contrat apco:dateDePublication ?date.
+FILTER (?date >"2016-01-01"^^xsd:date && ?date <"2016-12-31"^^xsd:date ) }
+Group by(?Nature_de_prestation)
+
+
+### CQ9 - Liste des Contrat formalisés avec DAC Gardinage
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT ?contrat 
+WHERE {
+?contrat apco:aPourPrestataire ?prestataire.
+FILTER(?prestataire="DAC GARDINAGE") }
+
+### CQ10 - Quelles sont les entreprises ayant eu un contrat en 2014?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT ?entreprise
+WHERE {
+?contrat apco:aPourPrestataire ?entreprise. 
+{ ?contrat apco:sigleProcédure ?procedure
+FILTER regex(?procedure, "DEC-ATTR") } 
+OPTIONAL
+{?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*") }
+?contrat apco:dateDePublication ?date.
+FILTER (?date >"2017-01-01"^^xsd:date && ?date <"2019-01-01"^^xsd:date ) }
+
+
+### CQ11 - Liste des contrats par secteur d’activité - TODO (lier avec la nomenclature des activités de l'INS)
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT ?secteur_d_activité (count(distinct ?contract) as ?nombre) WHERE {
+?contract apco:secteurDActivité ?secteur_d_activité
+
+### CQ12- Quelles sont les autorités contractantes ayant passées des contrats avec les montant prévisionnels les plus élevés?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT distinct ?Autorité_contractante ?budget 
+WHERE {
+?contrat pc:contractingAuthority ?AC.
+?AC rdfs:label ?Autorité_contractante.
+?contrat apco:montantPrévisionnelduMarché ?budget
+}
+ORDER BY DESC(?budget) LIMIT 100
+
+
+### CQ13 - Liste des contrats financés par la Banque Mondiale (add labels)
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT ?contrat WHERE {
+?contrat apco:estFinancéPar ?financement. 
+?financement apco:sourceDeFinancement ?finance
+ FILTER(?finance="BANQUE MONDIALE(BM)")
+}
+
+
+### CQ14 - Quel est le pourcentage de volume budgétaire des marchés pour chaque procédure
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX apco: <http://data.apco.cm/onto#>
+PREFIX pproc: <http://contsem.unizar.es/def/sector-publico/pproc#> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX pc: <http://purl.org/procurement/public-contracts#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dbpedia: <https://dbpedia.org/ontology/>
+PREFIX geofla: <http://data.ign.fr/def/geofla#>
+
+SELECT (100*?AOI/?cout_total as ?Appel_d_offre_ouvert_international) (100*?AON/?cout_total as ?Appel_d_offre_ouvert_national) (100*?DC/?cout_total as ?Demande_de_Cotation) (100*?AMI/? cout_total as ?Appel_a_manifestation_d_interet) (100*?DP/?cout_total as ? Demande_de_proposition) (100*?AONR/?cout_total as ?Appel_d_offre_national_restreint) (100*? AOIR/?cout_total as ?Appel_d_offre_international_restreint) (100*?AO/?cout_total as ? Appel_d_offre) (100*?BC/?cout_total as ?bon_de_commande) (100*?GAG/?cout_total as ? GRE_GRE)
+{
+{SELECT (sum(distinct ?montant) as ?DP)
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat pc:procedureType ?type.
+FILTER (?type= "Demande de Proposition.")}
+}
+{SELECT (sum(distinct ?montant) as ?AONR)
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat pc:procedureType ?type.
+FILTER (?type= "Appels d'Offres National Restreint")}
+}
+{SELECT (sum(distinct ?montant) as ?AOIR)
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat pc:procedureType ?type.
+FILTER (?type= "Appels d'Offres International Restreint")}
+}
+{SELECT (sum(distinct ?montant) as ?AO)
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat pc:procedureType ?type. FILTER (?type= "Appels d'Offres")}
+}
+{SELECT (sum(distinct ?montant) as ?BC)
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+  
+?contrat pc:procedureType ?type. FILTER (?type= "Bon de Commande")}
+}
+{SELECT (sum(distinct ?montant) as ?GAG)
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat pc:procedureType ?type. FILTER (?type= "Gré à Gré")}
+}
+{SELECT (sum(distinct ?montant) as ?AMI)
+WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat pc:procedureType ?type.
+FILTER (?type= "Appel à Manifestation d'Intérêt")}
+}
+{SELECT (sum(distinct ?montant) as ?AON) WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant. ?contrat pc:procedureType ?type.
+FILTER (?type= "Appels d'Offres National Ouvert")} }
+{SELECT (sum(distinct ?montant) as ?DC) WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant. ?contrat pc:procedureType ?type.
+FILTER (?type= "Demande de Cotation")} }
+{SELECT (sum(distinct ?montant) as ?AOI) WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant. ?contrat pc:procedureType ?type.
+FILTER (?type= "Appels d'Offres International Ouvert")} }
+{SELECT (sum(distinct ?montant) as ?cout_total) WHERE {
+?contrat apco:montantPrévisionnelduMarché ?montant.
+} }
+}
