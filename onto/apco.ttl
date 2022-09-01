@@ -23,27 +23,27 @@ dc:title
 <http://data.apco.cm/onto#aPourMaitreDOuvrage>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
-  rdfs:range <http://data.apco.cm/onto#MaîtreDOuvrage> ;
+  rdfs:range <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:comment "Property indicating the building owner of a public contract"@en, "Proprieté indiquant le maître d'ouvrage d'un marché public"@fr ;
   rdfs:label "aPourMaîtreD'Ouvrage"@fr, "hasBuildingOwner"@en .
 
 <http://data.apco.cm/onto#attribue>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
-  rdfs:domain <http://data.apco.cm/onto#MaîtreDOuvrage> ;
+  rdfs:domain <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:range <http://data.apco.cm/onto#Publication> ;
   rdfs:comment "Property indicating that a building owner awards a tender"@en, "Proprieté indiquant qu'un maître d'ouvrage attribue un appel d'offre"@fr ;
   rdfs:label "assigns"@en, "attribue"@fr .
 
 <http://data.apco.cm/onto#attribueA>
   a owl:ObjectProperty, owl:TransitiveProperty ;
-  rdfs:domain <http://data.apco.cm/onto#MaîtreDOuvrage> ;
+  rdfs:domain <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:range <http://data.apco.cm/onto#Prestataire> ;
   rdfs:comment "Property indicating to whom an owner assigns a tender"@fr, "Proprieté indiquant à qui un maître d'ouvrage attribue un appel d'offre"@fr .
 
 <http://data.apco.cm/onto#chefDeServiceDuMarche>
   a owl:ObjectProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
-  rdfs:range <http://data.apco.cm/onto#ChefDeServiceDuMarché> ;
+  rdfs:range <http://data.apco.cm/onto#ChefDeServiceDuMarche> ;
   rdfs:comment "property indicating the head of the market department of a public market"@en, "proprieté indiquant le chef de service du marché d'un marché public"@fr ;
   rdfs:label "Chef du Service du Marché"@fr, "market Service Manager"@en .
 
@@ -81,7 +81,7 @@ dc:title
 <http://purl.org/procurement/public-contracts#contractingAuthority>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
-  rdfs:range <http://data.apco.cm/onto#AutoritéContractante> .
+  rdfs:range <http://data.apco.cm/onto#AutoriteContractante> .
 
 <https://dbpedia.org/ontology/department>
   a owl:ObjectProperty ;
@@ -98,7 +98,7 @@ dc:title
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:nonNegativeInteger .
 
-<http://data.apco.cm/onto#dateDeClôture>
+<http://data.apco.cm/onto#dateDeCloture>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:subPropertyOf dc:date ;
   rdfs:label "closingDate"@en, "dateDeClôture"@fr, "property indicating the closing date of a publication"@en, "proprieté indiquant la date de clôture d'une publication"@fr .
@@ -119,19 +119,19 @@ dc:title
   rdfs:comment "Property indicating the the date of signing of a publication"@en, "Proprieté indiquant la date de signature d'une publication"@fr ;
   rdfs:label "dateDeSignature"@fr, "signatureDate"@en .
 
-<http://data.apco.cm/onto#désignationAutoritéContractante>
+<http://data.apco.cm/onto#designationAutoriteContractante>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://data.apco.cm/onto#AutoritéContractante> ;
+  rdfs:domain <http://data.apco.cm/onto#AutoriteContractante> ;
   rdfs:range xsd:string ;
   rdfs:label "designationContractingAutority"@en, "désignationAutoritéContractante"@fr .
 
-<http://data.apco.cm/onto#désignationMaîtreDOuvrage>
+<http://data.apco.cm/onto#designationMaitreDOuvrage>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://data.apco.cm/onto#MaîtreDOuvrage> ;
+  rdfs:domain <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:range xsd:string ;
   rdfs:label "designationBuildingOwner"@en, "désignationMaîtreD'Ouvrage"@fr .
 
-<http://data.apco.cm/onto#heureDeClôture>
+<http://data.apco.cm/onto#heureDeCloture>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:subPropertyOf dc:date ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
@@ -145,7 +145,7 @@ dc:title
   rdfs:range xsd:int ;
   rdfs:label "idPublication"@fr, "publicationID"@en .
 
-<http://data.apco.cm/onto#montantPrévisionnelduMarché>
+<http://data.apco.cm/onto#montantPrevisionnelduMarche>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:int ;
@@ -157,21 +157,21 @@ dc:title
   rdfs:range xsd:string ;
   rdfs:label "naturePrestation"@fr, "natureofService"@en .
 
-<http://data.apco.cm/onto#secteurDActivité>
+<http://data.apco.cm/onto#secteurDActivite>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:string ;
   rdfs:label "activityArea"@en, "secteurD'Activité"@fr .
 
-<http://data.apco.cm/onto#sigleAutoritéContractante>
+<http://data.apco.cm/onto#sigleAutoriteContractante>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://data.apco.cm/onto#AutoritéContractante> ;
+  rdfs:domain <http://data.apco.cm/onto#AutoriteContractante> ;
   rdfs:range xsd:string ;
   rdfs:label "acronymPrimeContractor"@en, "sigleAutoritéContractante"@fr .
 
-<http://data.apco.cm/onto#sigleMaîtreDOuvrage>
+<http://data.apco.cm/onto#sigleMaitreDOuvrage>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://data.apco.cm/onto#MaîtreDOuvrage> ;
+  rdfs:domain <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:range xsd:string ;
   rdfs:label "acronymBuildingOwner"@en, "sigleMaîtreD'Ouvrage"@fr .
 
@@ -197,7 +197,7 @@ dc:identifier
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:string .
 
-<http://data.apco.cm/onto#AppelAManifestationDIntérêt>
+<http://data.apco.cm/onto#AppelAManifestationDInterêt>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
   rdfs:label "AppelAManifestationD'Intérêt"@fr, "CallForExpressionsOfInterest"@en .
@@ -254,13 +254,13 @@ The pre-qualification report, drawn up by the Contracting Authority or the Contr
 The restricted tendering procedure may only be used in the following cases: (1) specific works or equipment of great importance or complexity; (2) specialized supplies and services; (3) intellectual services."""@en ;
   rdfs:label "AppelD'OffreRestreint"@fr, "RestrictedTender"@en .
 
-<http://data.apco.cm/onto#AutoritéContractante>
+<http://data.apco.cm/onto#AutoriteContractante>
   a owl:Class ;
   rdfs:subClassOf gr:BusinessEntity ;
   rdfs:comment "Natural person skilled in leading the contracting process and signing the related contracts"@en, "Personne physique ou morale habilelé à conduire le processus de contractualisation et de signer les marchés y relatifs"@fr ;
   rdfs:label "AutoritéContractante"@fr, "ContractingAuthority"@en .
 
-<http://data.apco.cm/onto#ChefDeServiceDuMarché>
+<http://data.apco.cm/onto#ChefDeServiceDuMarche>
   a owl:Class ;
   rdfs:comment "Natural person under public law accredited by the Project Owner or the Delegated Project Owner for general assistance of an administrative, financial and technical nature at the stage of definition, development, execution and acceptance of the services, market objects."@en, "Personne physique de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué pour une assistance générale à caractère administratif, financier et technique au stade de la définition, de l'élaboration, de l'exécution et de la réception des prestations, objets du marché."@fr ;
   rdfs:label "ChefDeServiceDuMarché"@fr, "MarketServiceManager"@en .
@@ -271,13 +271,13 @@ The restricted tendering procedure may only be used in the following cases: (1) 
   rdfs:comment "Procédure simplifiée de consultation d’entreprises pour la passation de certaines lettres-commandes relatives aux fournitures de biens et services ou à toutes autres prestations de moindre envergure ne nécessitant pas l’élaboration d’offres techniques."@fr, "simplified procedure for consulting companies for the awarding of certain job orders relating to the supply of goods and services or to any other smaller-scale services that do not require the preparation of technical offers"@en ;
   rdfs:label "APriceQuote"@en, "DemandeDeCotation"@fr .
 
-<http://data.apco.cm/onto#DécisionDAnnulation>
+<http://data.apco.cm/onto#DecisionDAnnulation>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
   rdfs:comment "Procedure for canceling a tender"@en, "Procédure d'annulation d'un appel d'offre"@fr ;
   rdfs:label "CancellationDecision"@en, "DécisionD'Annulation"@fr .
 
-<http://data.apco.cm/onto#DécisionDAttribution>
+<http://data.apco.cm/onto#DecisionDAttribution>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
   rdfs:comment "Procedure for awarding a call for tenders"@en, "Procédure d'attribution d'un appel d'offre"@fr ;
@@ -287,23 +287,23 @@ The restricted tendering procedure may only be used in the following cases: (1) 
   a owl:Class ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:onProperty <http://data.apco.cm/onto#estFinancéPar> ;
+    owl:onProperty <http://data.apco.cm/onto#estFinancePar> ;
     owl:minCardinality "1"^^xsd:nonNegativeInteger
   ] ;
   rdfs:comment "Class designating the body responsible for financing a public contract"@en, "Classe désignant l'organe chargé de financer un marché public"@fr ;
   rdfs:label "Financement"@fr, "Funding"@en .
 
-<http://data.apco.cm/onto#IngénieurDuMarché>
+<http://data.apco.cm/onto#IngenieurDuMarche>
   a owl:Class ;
   rdfs:comment "Natural or legal person governed by public law accredited by the Project Owner or the Delegated Project Owner, for the monitoring and technical and financial control of the performance of the contract."@en, "Personne physique ou morale de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué, pour le suivi et le contrôle technique et financier de l'exécution du marché."@fr ;
   rdfs:label "IngénieurDuMarché"@fr, "MarketEngineer"@en .
 
-<http://data.apco.cm/onto#MaîtreDOeuvre>
+<http://data.apco.cm/onto#MaitreDOeuvre>
   a owl:Class ;
   rdfs:comment "A natural or legal person governed by public or private law, charged by the contracting authority or the delegated contracting authority to guarantee its interests at the stage of definition, development, management of the execution and acceptance of the provision of market objects."@en, "Personne physique ou morale de droit public ou privé, chargée par le maître d'ouvrage ou le maître d'ouvrage déléguéde garantir ses intérêts au stade de la définition, de l'élaboration, de la direction de l'exécution et de la reception des prestation objets du marché."@fr ;
   rdfs:label "MaîtreD'Oeuvre"@fr, "ProjectManager"@en .
 
-<http://data.apco.cm/onto#MaîtreDOuvrage>
+<http://data.apco.cm/onto#MaitreDOuvrage>
   a owl:Class ;
   rdfs:comment "Chef de département ministériel ou assimilé, chef de l'exécutif d'une collectivité territoriale décentralisée, et directeur général d'un établissement public, représentant l'administration bénéficiaire des prestations prévues dans le marché."@fr ;
   rdfs:label "BuildingOwner"@en, "MaîtreD'Ouvrage"@fr .
