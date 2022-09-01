@@ -159,9 +159,9 @@
     
 
 
-    <!-- http://data.ign.fr/def/geofla/20210218.htm#region -->
+    <!-- http://data.ign.fr/def/geofla#region -->
 
-    <owl:ObjectProperty rdf:about="http://data.ign.fr/def/geofla/20210218.htm#region">
+    <owl:ObjectProperty rdf:about="http://data.ign.fr/def/geofla#region">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:range rdf:resource="https://dbpedia.org/ontology/Region"/>
     </owl:ObjectProperty>

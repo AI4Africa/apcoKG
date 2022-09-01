@@ -68,7 +68,7 @@ dc:title
   rdfs:comment "Property indicating that a tender is awarded to a provider"@en, "Proprieté indiquant le prestataire d'un marché public"@fr ;
   rdfs:label "aPourPrestataire"@fr, "hasProvider"@en .
 
-<http://data.ign.fr/def/geofla/20210218.htm#region>
+<http://data.ign.fr/def/geofla#region>
   a owl:ObjectProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range <https://dbpedia.org/ontology/Region> .
