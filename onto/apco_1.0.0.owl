@@ -72,8 +72,8 @@
         <rdfs:range rdf:resource="http://data.apco.cm/onto#MaitreDOuvrage"/>
         <rdfs:comment xml:lang="en">Property indicating the building owner of a public contract</rdfs:comment>
         <rdfs:comment xml:lang="fr">Proprieté indiquant le maître d&apos;ouvrage d&apos;un marché public</rdfs:comment>
-        <rdfs:label xml:lang="fr">aPourMaîtreD&apos;Ouvrage</rdfs:label>
-        <rdfs:label xml:lang="en">hasBuildingOwner</rdfs:label>
+        <rdfs:label xml:lang="fr">a pour maître D&apos;Ouvrage</rdfs:label>
+        <rdfs:label xml:lang="en">has building owner</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -125,8 +125,8 @@
         <rdfs:range rdf:resource="http://data.apco.cm/onto#Financement"/>
         <rdfs:comment xml:lang="en">Property indicating the source of funding for a public contract</rdfs:comment>
         <rdfs:comment xml:lang="fr">Propriété indiquant la source de financement d&apos;un marché public</rdfs:comment>
-        <rdfs:label xml:lang="fr">est Financé Par</rdfs:label>
-        <rdfs:label xml:lang="en">is Funded By</rdfs:label>
+        <rdfs:label xml:lang="fr">est financé Par</rdfs:label>
+        <rdfs:label xml:lang="en">is funded By</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -153,8 +153,8 @@
         <rdfs:range rdf:resource="http://data.apco.cm/onto#Prestataire"/>
         <rdfs:comment xml:lang="en">Property indicating that a tender is awarded to a provider</rdfs:comment>
         <rdfs:comment xml:lang="fr">Proprieté indiquant le prestataire d&apos;un marché public</rdfs:comment>
-        <rdfs:label xml:lang="fr">aPourPrestataire</rdfs:label>
-        <rdfs:label xml:lang="en">hasProvider</rdfs:label>
+        <rdfs:label xml:lang="fr">a pour prestataire</rdfs:label>
+        <rdfs:label xml:lang="en">has provider</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -231,8 +231,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#dateDeCloture">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:label xml:lang="en">closingDate</rdfs:label>
-        <rdfs:label xml:lang="fr">dateDeClôture</rdfs:label>
+        <rdfs:label xml:lang="en">closing date</rdfs:label>
+        <rdfs:label xml:lang="fr">date de clôture</rdfs:label>
         <rdfs:label xml:lang="en">property indicating the closing date of a publication</rdfs:label>
         <rdfs:label xml:lang="fr">proprieté indiquant la date de clôture d&apos;une publication</rdfs:label>
     </owl:DatatypeProperty>
@@ -263,8 +263,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Property indicating the the date of signing of a publication</rdfs:comment>
         <rdfs:comment xml:lang="fr">Proprieté indiquant la date de signature d&apos;une publication</rdfs:comment>
-        <rdfs:label xml:lang="fr">dateDeSignature</rdfs:label>
-        <rdfs:label xml:lang="en">signatureDate</rdfs:label>
+        <rdfs:label xml:lang="fr">date de signature</rdfs:label>
+        <rdfs:label xml:lang="en">signature date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -274,8 +274,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#designationAutoriteContractante">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#AutoriteContractante"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">designationContractingAutority</rdfs:label>
-        <rdfs:label xml:lang="fr">désignationAutoritéContractante</rdfs:label>
+        <rdfs:label xml:lang="en">designation contracting autority</rdfs:label>
+        <rdfs:label xml:lang="fr">désignation autorité contractante</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -285,8 +285,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#designationMaitreDOuvrage">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#MaitreDOuvrage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">designationBuildingOwner</rdfs:label>
-        <rdfs:label xml:lang="fr">désignationMaîtreD&apos;Ouvrage</rdfs:label>
+        <rdfs:label xml:lang="en">designation building owner</rdfs:label>
+        <rdfs:label xml:lang="fr">désignation maître d&apos;ouvrage</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -300,8 +300,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Property indicating the closing time of a publication</rdfs:comment>
         <rdfs:comment xml:lang="fr">Proprieté indiquant l&apos;heure de clôture d&apos;une publication</rdfs:comment>
-        <rdfs:label xml:lang="en">closingTime</rdfs:label>
-        <rdfs:label xml:lang="fr">heureDeClôture</rdfs:label>
+        <rdfs:label xml:lang="en">closing time</rdfs:label>
+        <rdfs:label xml:lang="fr">heure de clôture</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -311,8 +311,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#idPublication">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="fr">idPublication</rdfs:label>
-        <rdfs:label xml:lang="en">publicationID</rdfs:label>
+        <rdfs:label xml:lang="fr">id publication</rdfs:label>
+        <rdfs:label xml:lang="en">publication id</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -322,8 +322,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#montantPrevisionnelduMarche">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="en">estimatedAmount</rdfs:label>
-        <rdfs:label xml:lang="fr">montantPrévisionnelDuMarché</rdfs:label>
+        <rdfs:label xml:lang="en">estimated amount</rdfs:label>
+        <rdfs:label xml:lang="fr">montant prévisionnel du marché</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -333,8 +333,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#naturePrestation">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="fr">naturePrestation</rdfs:label>
-        <rdfs:label xml:lang="en">natureofService</rdfs:label>
+        <rdfs:label xml:lang="en">nature of service</rdfs:label>
+        <rdfs:label xml:lang="fr">nature prestation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -344,8 +344,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#secteurDActivite">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">activityArea</rdfs:label>
-        <rdfs:label xml:lang="fr">secteurD&apos;Activité</rdfs:label>
+        <rdfs:label xml:lang="en">activity area</rdfs:label>
+        <rdfs:label xml:lang="fr">secteur d&apos;activité</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -355,8 +355,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#sigleAutoriteContractante">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#AutoriteContractante"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">acronymPrimeContractor</rdfs:label>
-        <rdfs:label xml:lang="fr">sigleAutoritéContractante</rdfs:label>
+        <rdfs:label xml:lang="en">acronym prime contractor</rdfs:label>
+        <rdfs:label xml:lang="fr">sigle autorité contractante</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -366,8 +366,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#sigleMaitreDOuvrage">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#MaitreDOuvrage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">acronymBuildingOwner</rdfs:label>
-        <rdfs:label xml:lang="fr">sigleMaîtreD&apos;Ouvrage</rdfs:label>
+        <rdfs:label xml:lang="en">acronym building owner</rdfs:label>
+        <rdfs:label xml:lang="fr">sigle maître d&apos;ouvrage</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -386,8 +386,8 @@
     <owl:DatatypeProperty rdf:about="http://data.apco.cm/onto#sourceDeFinancement">
         <rdfs:domain rdf:resource="http://data.apco.cm/onto#Financement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="fr">sourceDeFinancement</rdfs:label>
-        <rdfs:label xml:lang="en">sourceofFunding</rdfs:label>
+        <rdfs:label xml:lang="fr">source de financement</rdfs:label>
+        <rdfs:label xml:lang="en">source of funding</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -438,8 +438,8 @@
 
     <owl:Class rdf:about="http://data.apco.cm/onto#AppelAManifestationDInterêt">
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#Publication"/>
-        <rdfs:label xml:lang="fr">AppelAManifestationD&apos;Intérêt</rdfs:label>
-        <rdfs:label xml:lang="en">CallForExpressionsOfInterest</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel a manifestation d&apos;intérêt</rdfs:label>
+        <rdfs:label xml:lang="en">Call for expressions of interest</rdfs:label>
     </owl:Class>
     
 
@@ -450,8 +450,8 @@
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:comment xml:lang="fr">contrat ecrit par lequel un entrepreneur, un fournisseur ou un prestataire de service s&apos;engage envers l&apos;etat , une collectivité territoriale décentralisée ou un établissement public soit à réaliser des travaux, soit à fournir des biens et des services moyennant un prix</rdfs:comment>
         <rdfs:comment xml:lang="en">written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price</rdfs:comment>
-        <rdfs:label xml:lang="fr">Appeld&apos;Offre</rdfs:label>
-        <rdfs:label xml:lang="en">PublicContract</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel d&apos;offre</rdfs:label>
+        <rdfs:label xml:lang="en">Public contract</rdfs:label>
         <rdfs:label xml:lang="en">Tender</rdfs:label>
     </owl:Class>
     
@@ -479,8 +479,8 @@
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#AppelDOffreOuvert"/>
         <rdfs:comment xml:lang="fr">La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres.</rdfs:comment>
         <rdfs:comment xml:lang="en">The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders.</rdfs:comment>
-        <rdfs:label xml:lang="fr">AppelD&apos;OffreInternationalOuvert</rdfs:label>
-        <rdfs:label xml:lang="en">OpenInternationalTender</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel d&apos;offre international ouvert</rdfs:label>
+        <rdfs:label xml:lang="en">Open international tender</rdfs:label>
     </owl:Class>
     
 
@@ -491,8 +491,8 @@
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#AppelDOffreRestreint"/>
         <rdfs:comment xml:lang="fr">La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres.</rdfs:comment>
         <rdfs:comment xml:lang="en">The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders.</rdfs:comment>
-        <rdfs:label xml:lang="fr">AppelD&apos;OffreInternationalRestreint</rdfs:label>
-        <rdfs:label xml:lang="en">RestrictedInternationalTender</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel d&apos;offre international restreint</rdfs:label>
+        <rdfs:label xml:lang="en">Restricted international tender</rdfs:label>
     </owl:Class>
     
 
@@ -503,8 +503,8 @@
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#AppelDOffreOuvert"/>
         <rdfs:comment xml:lang="fr">La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international.</rdfs:comment>
         <rdfs:comment xml:lang="en">The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market.</rdfs:comment>
-        <rdfs:label xml:lang="fr">AppelD&apos;OffreNationalOuvert</rdfs:label>
-        <rdfs:label xml:lang="en">OpenNationalTender</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel d&apos;offre national ouvert</rdfs:label>
+        <rdfs:label xml:lang="en">Open national tender</rdfs:label>
     </owl:Class>
     
 
@@ -514,8 +514,8 @@
     <owl:Class rdf:about="http://data.apco.cm/onto#AppelDOffreOuvert">
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#AppelDOffre"/>
         <owl:disjointWith rdf:resource="http://data.apco.cm/onto#AppelDOffreRestreint"/>
-        <rdfs:label xml:lang="fr">AppelD&apos;OffreOuvert</rdfs:label>
-        <rdfs:label xml:lang="en">OpenTender</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel d&apos;offre ouvert</rdfs:label>
+        <rdfs:label xml:lang="en">open tender</rdfs:label>
     </owl:Class>
     
 
@@ -534,8 +534,8 @@ La procédure d’appel d’offres restreint ne peut être utilisée que dans le
 The pre-qualification report, drawn up by the Contracting Authority or the Contracting Authority&apos;s Representative and accompanied by the draft tender dossier with the proposal for shortlists, is submitted to the competent procurement commission for examination.
 
 The restricted tendering procedure may only be used in the following cases: (1) specific works or equipment of great importance or complexity; (2) specialized supplies and services; (3) intellectual services.</rdfs:comment>
-        <rdfs:label xml:lang="fr">AppelD&apos;OffreRestreint</rdfs:label>
-        <rdfs:label xml:lang="en">RestrictedTender</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel d&apos;offre restreint</rdfs:label>
+        <rdfs:label xml:lang="en">Restricted tender</rdfs:label>
     </owl:Class>
     
 
@@ -546,8 +546,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#BusinessEntity"/>
         <rdfs:comment xml:lang="en">Natural person skilled in leading the contracting process and signing the related contracts</rdfs:comment>
         <rdfs:comment xml:lang="fr">Personne physique ou morale habilelé à conduire le processus de contractualisation et de signer les marchés y relatifs</rdfs:comment>
-        <rdfs:label xml:lang="fr">AutoritéContractante</rdfs:label>
-        <rdfs:label xml:lang="en">ContractingAuthority</rdfs:label>
+        <rdfs:label xml:lang="fr">Autorité contractante</rdfs:label>
+        <rdfs:label xml:lang="en">Contracting authority</rdfs:label>
     </owl:Class>
     
 
@@ -557,8 +557,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
     <owl:Class rdf:about="http://data.apco.cm/onto#ChefDeServiceDuMarche">
         <rdfs:comment xml:lang="en">Natural person under public law accredited by the Project Owner or the Delegated Project Owner for general assistance of an administrative, financial and technical nature at the stage of definition, development, execution and acceptance of the services, market objects.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Personne physique de droit public accréditée par le Maître d&apos;ouvrage ou le Maître d&apos;ouvrage délégué pour une assistance générale à caractère administratif, financier et technique au stade de la définition, de l&apos;élaboration, de l&apos;exécution et de la réception des prestations, objets du marché.</rdfs:comment>
-        <rdfs:label xml:lang="fr">ChefDeServiceDuMarché</rdfs:label>
-        <rdfs:label xml:lang="en">MarketServiceManager</rdfs:label>
+        <rdfs:label xml:lang="fr">Chef de service du marché</rdfs:label>
+        <rdfs:label xml:lang="en">Market service manager</rdfs:label>
     </owl:Class>
     
 
@@ -569,8 +569,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:comment xml:lang="en">Procedure for canceling a tender</rdfs:comment>
         <rdfs:comment xml:lang="fr">Procédure d&apos;annulation d&apos;un appel d&apos;offre</rdfs:comment>
-        <rdfs:label xml:lang="en">CancellationDecision</rdfs:label>
-        <rdfs:label xml:lang="fr">DécisionD&apos;Annulation</rdfs:label>
+        <rdfs:label xml:lang="en">Cancellation decision</rdfs:label>
+        <rdfs:label xml:lang="fr">Décision d&apos;annulation</rdfs:label>
     </owl:Class>
     
 
@@ -581,8 +581,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#Publication"/>
         <rdfs:comment xml:lang="en">Procedure for awarding a call for tenders</rdfs:comment>
         <rdfs:comment xml:lang="fr">Procédure d&apos;attribution d&apos;un appel d&apos;offre</rdfs:comment>
-        <rdfs:label xml:lang="en">AwardDecision</rdfs:label>
-        <rdfs:label xml:lang="fr">DécisionD&apos;Attribution</rdfs:label>
+        <rdfs:label xml:lang="en">Award decision</rdfs:label>
+        <rdfs:label xml:lang="fr">Décision d&apos;attribution</rdfs:label>
     </owl:Class>
     
 
@@ -621,8 +621,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
     <owl:Class rdf:about="http://data.apco.cm/onto#IngenieurDuMarche">
         <rdfs:comment xml:lang="en">Natural or legal person governed by public law accredited by the Project Owner or the Delegated Project Owner, for the monitoring and technical and financial control of the performance of the contract.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Personne physique ou morale de droit public accréditée par le Maître d&apos;ouvrage ou le Maître d&apos;ouvrage délégué, pour le suivi et le contrôle technique et financier de l&apos;exécution du marché.</rdfs:comment>
-        <rdfs:label xml:lang="fr">IngénieurDuMarché</rdfs:label>
-        <rdfs:label xml:lang="en">MarketEngineer</rdfs:label>
+        <rdfs:label xml:lang="fr">Ingénieur du marché</rdfs:label>
+        <rdfs:label xml:lang="en">market engineer</rdfs:label>
     </owl:Class>
     
 
@@ -632,8 +632,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
     <owl:Class rdf:about="http://data.apco.cm/onto#MaitreDOeuvre">
         <rdfs:comment xml:lang="en">A natural or legal person governed by public or private law, charged by the contracting authority or the delegated contracting authority to guarantee its interests at the stage of definition, development, management of the execution and acceptance of the provision of market objects.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Personne physique ou morale de droit public ou privé, chargée par le maître d&apos;ouvrage ou le maître d&apos;ouvrage déléguéde garantir ses intérêts au stade de la définition, de l&apos;élaboration, de la direction de l&apos;exécution et de la reception des prestation objets du marché.</rdfs:comment>
-        <rdfs:label xml:lang="fr">MaîtreD&apos;Oeuvre</rdfs:label>
-        <rdfs:label xml:lang="en">ProjectManager</rdfs:label>
+        <rdfs:label xml:lang="en">Project manager</rdfs:label>
+        <rdfs:label xml:lang="fr">maître d&apos;oeuvre</rdfs:label>
     </owl:Class>
     
 
@@ -642,8 +642,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
 
     <owl:Class rdf:about="http://data.apco.cm/onto#MaitreDOuvrage">
         <rdfs:comment xml:lang="fr">Chef de département ministériel ou assimilé, chef de l&apos;exécutif d&apos;une collectivité territoriale décentralisée, et directeur général d&apos;un établissement public, représentant l&apos;administration bénéficiaire des prestations prévues dans le marché.</rdfs:comment>
-        <rdfs:label xml:lang="en">BuildingOwner</rdfs:label>
-        <rdfs:label xml:lang="fr">MaîtreD&apos;Ouvrage</rdfs:label>
+        <rdfs:label xml:lang="en">Building owner</rdfs:label>
+        <rdfs:label xml:lang="fr">Maître d&apos;ouvrage</rdfs:label>
     </owl:Class>
     
 
@@ -707,8 +707,8 @@ The restricted tendering procedure may only be used in the following cases: (1) 
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#AppelDOffreRestreint"/>
         <rdfs:comment xml:lang="fr">La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international.</rdfs:comment>
         <rdfs:comment xml:lang="en">The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market.</rdfs:comment>
-        <rdfs:label xml:lang="fr">AppelD&apos;OffreNationalRestreint</rdfs:label>
-        <rdfs:label xml:lang="en">RestrictedNationalTender</rdfs:label>
+        <rdfs:label xml:lang="fr">Appel d&apos;offre national restreint</rdfs:label>
+        <rdfs:label xml:lang="en">Restricted national tender</rdfs:label>
     </owl:Class>
     
 

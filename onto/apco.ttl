@@ -25,7 +25,7 @@ dc:title
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:comment "Property indicating the building owner of a public contract"@en, "Proprieté indiquant le maître d'ouvrage d'un marché public"@fr ;
-  rdfs:label "aPourMaîtreD'Ouvrage"@fr, "hasBuildingOwner"@en .
+  rdfs:label "a pour maître D'Ouvrage"@fr, "has building owner"@en .
 
 <http://data.apco.cm/onto#attribue>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
@@ -52,7 +52,7 @@ dc:title
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range <http://data.apco.cm/onto#Financement> ;
   rdfs:comment "Property indicating the source of funding for a public contract"@en, "Propriété indiquant la source de financement d'un marché public"@fr ;
-  rdfs:label "est Financé Par"@fr, "is Funded By"@en .
+  rdfs:label "est financé Par"@fr, "is funded By"@en .
 
 <http://data.apco.cm/onto#faitUneOffre>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
@@ -66,7 +66,7 @@ dc:title
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range <http://data.apco.cm/onto#Prestataire> ;
   rdfs:comment "Property indicating that a tender is awarded to a provider"@en, "Proprieté indiquant le prestataire d'un marché public"@fr ;
-  rdfs:label "aPourPrestataire"@fr, "hasProvider"@en .
+  rdfs:label "a pour prestataire"@fr, "has provider"@en .
 
 <http://data.ign.fr/def/geofla#region>
   a owl:ObjectProperty ;
@@ -101,7 +101,7 @@ dc:title
 <http://data.apco.cm/onto#dateDeCloture>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:subPropertyOf dc:date ;
-  rdfs:label "closingDate"@en, "dateDeClôture"@fr, "property indicating the closing date of a publication"@en, "proprieté indiquant la date de clôture d'une publication"@fr .
+  rdfs:label "closing date"@en, "date de clôture"@fr, "property indicating the closing date of a publication"@en, "proprieté indiquant la date de clôture d'une publication"@fr .
 
 <http://data.apco.cm/onto#dateDePublication>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
@@ -117,19 +117,19 @@ dc:title
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:dateTime ;
   rdfs:comment "Property indicating the the date of signing of a publication"@en, "Proprieté indiquant la date de signature d'une publication"@fr ;
-  rdfs:label "dateDeSignature"@fr, "signatureDate"@en .
+  rdfs:label "date de signature"@fr, "signature date"@en .
 
 <http://data.apco.cm/onto#designationAutoriteContractante>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#AutoriteContractante> ;
   rdfs:range xsd:string ;
-  rdfs:label "designationContractingAutority"@en, "désignationAutoritéContractante"@fr .
+  rdfs:label "designation contracting autority"@en, "désignation autorité contractante"@fr .
 
 <http://data.apco.cm/onto#designationMaitreDOuvrage>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:range xsd:string ;
-  rdfs:label "designationBuildingOwner"@en, "désignationMaîtreD'Ouvrage"@fr .
+  rdfs:label "designation building owner"@en, "désignation maître d'ouvrage"@fr .
 
 <http://data.apco.cm/onto#heureDeCloture>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
@@ -137,43 +137,43 @@ dc:title
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:dateTime ;
   rdfs:comment "Property indicating the closing time of a publication"@en, "Proprieté indiquant l'heure de clôture d'une publication"@fr ;
-  rdfs:label "closingTime"@en, "heureDeClôture"@fr .
+  rdfs:label "closing time"@en, "heure de clôture"@fr .
 
 <http://data.apco.cm/onto#idPublication>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:int ;
-  rdfs:label "idPublication"@fr, "publicationID"@en .
+  rdfs:label "id publication"@fr, "publication id"@en .
 
 <http://data.apco.cm/onto#montantPrevisionnelduMarche>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:int ;
-  rdfs:label "estimatedAmount"@en, "montantPrévisionnelDuMarché"@fr .
+  rdfs:label "estimated amount"@en, "montant prévisionnel du marché"@fr .
 
 <http://data.apco.cm/onto#naturePrestation>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:string ;
-  rdfs:label "naturePrestation"@fr, "natureofService"@en .
+  rdfs:label "nature prestation"@fr, "nature of service"@en .
 
 <http://data.apco.cm/onto#secteurDActivite>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:string ;
-  rdfs:label "activityArea"@en, "secteurD'Activité"@fr .
+  rdfs:label "activity area"@en, "secteur d'activité"@fr .
 
 <http://data.apco.cm/onto#sigleAutoriteContractante>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#AutoriteContractante> ;
   rdfs:range xsd:string ;
-  rdfs:label "acronymPrimeContractor"@en, "sigleAutoritéContractante"@fr .
+  rdfs:label "acronym prime contractor"@en, "sigle autorité contractante"@fr .
 
 <http://data.apco.cm/onto#sigleMaitreDOuvrage>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#MaitreDOuvrage> ;
   rdfs:range xsd:string ;
-  rdfs:label "acronymBuildingOwner"@en, "sigleMaîtreD'Ouvrage"@fr .
+  rdfs:label "acronym building owner"@en, "sigle maître d'ouvrage"@fr .
 
 <http://data.apco.cm/onto#sigleProcedure>
   a owl:DatatypeProperty ;
@@ -184,7 +184,7 @@ dc:title
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Financement> ;
   rdfs:range xsd:string ;
-  rdfs:label "sourceDeFinancement"@fr, "sourceofFunding"@en .
+  rdfs:label "source de financement"@fr, "source of funding"@en .
 
 dc:date a owl:DatatypeProperty .
 dc:identifier
@@ -200,13 +200,13 @@ dc:identifier
 <http://data.apco.cm/onto#AppelAManifestationDInterêt>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
-  rdfs:label "AppelAManifestationD'Intérêt"@fr, "CallForExpressionsOfInterest"@en .
+  rdfs:label "Appel a manifestation d'intérêt"@fr, "Call for expressions of interest"@en .
 
 <http://data.apco.cm/onto#AppelDOffre>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
   rdfs:comment "contrat ecrit par lequel un entrepreneur, un fournisseur ou un prestataire de service s'engage envers l'etat , une collectivité territoriale décentralisée ou un établissement public soit à réaliser des travaux, soit à fournir des biens et des services moyennant un prix"@fr, "written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price"@en ;
-  rdfs:label "Appeld'Offre"@fr, "PublicContract"@en, "Tender"@en .
+  rdfs:label "Appel d'offre"@fr, "Public contract"@en, "Tender"@en .
 
 <http://data.apco.cm/onto#AppelDOffreAveConcours>
   a owl:Class ;
@@ -220,25 +220,25 @@ dc:identifier
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#AppelDOffreOuvert> ;
   rdfs:comment "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."@fr, "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders."@en ;
-  rdfs:label "AppelD'OffreInternationalOuvert"@fr, "OpenInternationalTender"@en .
+  rdfs:label "Appel d'offre international ouvert"@fr, "Open international tender"@en .
 
 <http://data.apco.cm/onto#AppelDOffreInternationalRestreint>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#AppelDOffreRestreint> ;
   rdfs:comment "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."@fr, "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders."@en ;
-  rdfs:label "AppelD'OffreInternationalRestreint"@fr, "RestrictedInternationalTender"@en .
+  rdfs:label "Appel d'offre international restreint"@fr, "Restricted international tender"@en .
 
 <http://data.apco.cm/onto#AppelDOffreNationalOuvert>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#AppelDOffreOuvert> ;
   rdfs:comment "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."@fr, "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."@en ;
-  rdfs:label "AppelD'OffreNationalOuvert"@fr, "OpenNationalTender"@en .
+  rdfs:label "Appel d'offre national ouvert"@fr, "Open national tender"@en .
 
 <http://data.apco.cm/onto#AppelDOffreOuvert>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#AppelDOffre> ;
   owl:disjointWith <http://data.apco.cm/onto#AppelDOffreRestreint> ;
-  rdfs:label "AppelD'OffreOuvert"@fr, "OpenTender"@en .
+  rdfs:label "Appel d'offre ouvert"@fr, "open tender"@en .
 
 <http://data.apco.cm/onto#AppelDOffreRestreint>
   a owl:Class ;
@@ -252,18 +252,18 @@ La procédure d’appel d’offres restreint ne peut être utilisée que dans le
 The pre-qualification report, drawn up by the Contracting Authority or the Contracting Authority's Representative and accompanied by the draft tender dossier with the proposal for shortlists, is submitted to the competent procurement commission for examination.
 
 The restricted tendering procedure may only be used in the following cases: (1) specific works or equipment of great importance or complexity; (2) specialized supplies and services; (3) intellectual services."""@en ;
-  rdfs:label "AppelD'OffreRestreint"@fr, "RestrictedTender"@en .
+  rdfs:label "Appel d'offre restreint"@fr, "Restricted tender"@en .
 
 <http://data.apco.cm/onto#AutoriteContractante>
   a owl:Class ;
   rdfs:subClassOf gr:BusinessEntity ;
   rdfs:comment "Natural person skilled in leading the contracting process and signing the related contracts"@en, "Personne physique ou morale habilelé à conduire le processus de contractualisation et de signer les marchés y relatifs"@fr ;
-  rdfs:label "AutoritéContractante"@fr, "ContractingAuthority"@en .
+  rdfs:label "Autorité contractante"@fr, "Contracting authority"@en .
 
 <http://data.apco.cm/onto#ChefDeServiceDuMarche>
   a owl:Class ;
   rdfs:comment "Natural person under public law accredited by the Project Owner or the Delegated Project Owner for general assistance of an administrative, financial and technical nature at the stage of definition, development, execution and acceptance of the services, market objects."@en, "Personne physique de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué pour une assistance générale à caractère administratif, financier et technique au stade de la définition, de l'élaboration, de l'exécution et de la réception des prestations, objets du marché."@fr ;
-  rdfs:label "ChefDeServiceDuMarché"@fr, "MarketServiceManager"@en .
+  rdfs:label "Chef de service du marché"@fr, "Market service manager"@en .
 
 <http://data.apco.cm/onto#DemandeDeCotation>
   a owl:Class ;
@@ -275,13 +275,13 @@ The restricted tendering procedure may only be used in the following cases: (1) 
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
   rdfs:comment "Procedure for canceling a tender"@en, "Procédure d'annulation d'un appel d'offre"@fr ;
-  rdfs:label "CancellationDecision"@en, "DécisionD'Annulation"@fr .
+  rdfs:label "Cancellation decision"@en, "Décision d'annulation"@fr .
 
 <http://data.apco.cm/onto#DecisionDAttribution>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
   rdfs:comment "Procedure for awarding a call for tenders"@en, "Procédure d'attribution d'un appel d'offre"@fr ;
-  rdfs:label "AwardDecision"@en, "DécisionD'Attribution"@fr .
+  rdfs:label "Award decision"@en, "Décision d'attribution"@fr .
 
 <http://data.apco.cm/onto#Financement>
   a owl:Class ;
@@ -296,17 +296,17 @@ The restricted tendering procedure may only be used in the following cases: (1) 
 <http://data.apco.cm/onto#IngenieurDuMarche>
   a owl:Class ;
   rdfs:comment "Natural or legal person governed by public law accredited by the Project Owner or the Delegated Project Owner, for the monitoring and technical and financial control of the performance of the contract."@en, "Personne physique ou morale de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué, pour le suivi et le contrôle technique et financier de l'exécution du marché."@fr ;
-  rdfs:label "IngénieurDuMarché"@fr, "MarketEngineer"@en .
+  rdfs:label "Ingénieur du marché"@fr, "market engineer"@en .
 
 <http://data.apco.cm/onto#MaitreDOeuvre>
   a owl:Class ;
   rdfs:comment "A natural or legal person governed by public or private law, charged by the contracting authority or the delegated contracting authority to guarantee its interests at the stage of definition, development, management of the execution and acceptance of the provision of market objects."@en, "Personne physique ou morale de droit public ou privé, chargée par le maître d'ouvrage ou le maître d'ouvrage déléguéde garantir ses intérêts au stade de la définition, de l'élaboration, de la direction de l'exécution et de la reception des prestation objets du marché."@fr ;
-  rdfs:label "MaîtreD'Oeuvre"@fr, "ProjectManager"@en .
+  rdfs:label "maître d'oeuvre"@fr, "Project manager"@en .
 
 <http://data.apco.cm/onto#MaitreDOuvrage>
   a owl:Class ;
   rdfs:comment "Chef de département ministériel ou assimilé, chef de l'exécutif d'une collectivité territoriale décentralisée, et directeur général d'un établissement public, représentant l'administration bénéficiaire des prestations prévues dans le marché."@fr ;
-  rdfs:label "BuildingOwner"@en, "MaîtreD'Ouvrage"@fr .
+  rdfs:label "Building owner"@en, "Maître d'ouvrage"@fr .
 
 <http://data.apco.cm/onto#Offre>
   a owl:Class ;
@@ -339,7 +339,7 @@ The restricted tendering procedure may only be used in the following cases: (1) 
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#AppelDOffreRestreint> ;
   rdfs:comment "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."@fr, "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."@en ;
-  rdfs:label "AppelD'OffreNationalRestreint"@fr, "RestrictedNationalTender"@en .
+  rdfs:label "Appel d'offre national restreint"@fr, "Restricted national tender"@en .
 
 gr:BusinessEntity a owl:Class .
 gr:Offering a owl:Class .
