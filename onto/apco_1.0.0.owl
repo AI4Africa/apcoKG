@@ -768,9 +768,9 @@ The restricted tendering procedure may only be used in the following cases: (1) 
     
 
 
-    <!-- http://data.apco.cm/linkedin.com/in/jules-quentin-kouamo-99259921a -->
+    <!-- https://linkedin.com/in/jules-quentin-kouamo-99259921a -->
 
-    <owl:NamedIndividual rdf:about="http://data.apco.cm/linkedin.com/in/jules-quentin-kouamo-99259921a">
+    <owl:NamedIndividual rdf:about="https://linkedin.com/in/jules-quentin-kouamo-99259921a">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:NamedIndividual>
     
@@ -778,7 +778,7 @@ The restricted tendering procedure may only be used in the following cases: (1) 
 
     <!-- http://data.apco.cm/onto#linkedin.com/in/etienne-kouokam-18a24913 -->
 
-    <owl:NamedIndividual rdf:about="http://data.apco.cm/onto#linkedin.com/in/etienne-kouokam-18a24913">
+    <owl:NamedIndividual rdf:about="https://linkedin.com/in/etienne-kouokam-18a24913">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:NamedIndividual>
 </rdf:RDF>
