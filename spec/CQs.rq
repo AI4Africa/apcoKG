@@ -12,11 +12,11 @@ PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX dbpedia: <https://dbpedia.org/ontology/>
 PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
-SELECT ?contrat ?Date WHERE {
+SELECT ?contrat ?date WHERE {
 { ?contrat apco:sigleProcedure ?procedure FILTER regex(?procedure, "DEC-ATTR") } OPTIONAL
 {?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*")
 }
-?contrat apco:dateDePublication ?Date
+?contrat apco:dateDePublication ?date
 }
 ORDER BY DESC(?date) LIMIT 100
 
