@@ -434,7 +434,7 @@
     
 
 
-    <!-- http://data.apco.cm/onto#AppelAManifestationDInterêt -->
+    <!-- http://data.apco.cm/onto#AppelAManifestationDInteret -->
 
     <owl:Class rdf:about="http://data.apco.cm/onto#AppelAManifestationDInterêt">
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#Publication"/>
@@ -452,14 +452,14 @@
         <rdfs:comment xml:lang="en">written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price</rdfs:comment>
         <rdfs:label xml:lang="fr">Appel d&apos;offre</rdfs:label>
         <rdfs:label xml:lang="en">Public contract</rdfs:label>
-        <rdfs:label xml:lang="en">Tender</rdfs:label>
+        <rdfs:label xml:lang="en">Tender </rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://data.apco.cm/onto#AppelDOffreAveConcours -->
+    <!-- http://data.apco.cm/onto#AppelDOffreAvecConcours -->
 
-    <owl:Class rdf:about="http://data.apco.cm/onto#AppelDOffreAveConcours">
+    <owl:Class rdf:about="http://data.apco.cm/onto#AppelDOffreAvecConcours">
         <rdfs:subClassOf rdf:resource="http://data.apco.cm/onto#AppelDOffre"/>
     </owl:Class>
     

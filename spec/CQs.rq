@@ -12,11 +12,11 @@ PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX dbpedia: <https://dbpedia.org/ontology/>
 PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
-SELECT ?contrat ?date WHERE {
-{ ?contrat apco:sigleProcédure ?procedure FILTER regex(?procedure, "DEC-ATTR") } OPTIONAL
+SELECT ?contrat ?Date WHERE {
+{ ?contrat apco:sigleProcedure ?procedure FILTER regex(?procedure, "DEC-ATTR") } OPTIONAL
 {?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*")
 }
-?contrat apco:dateDePublication ?date
+?contrat apco:dateDePublication ?Date
 }
 ORDER BY DESC(?date) LIMIT 100
 
@@ -52,7 +52,7 @@ PREFIX dbpedia: <https://dbpedia.org/ontology/>
 PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT ?contrat ?budget WHERE {
-?contrat apco:montantPrévisionnelduMarché ?budget }
+?contrat apco:montantPrevisionnelduMarche ?budget }
 ORDER BY DESC(?budget) LIMIT 100
 
 ### CQ4 - Combien y a t’il de contrats par type de procédure?
@@ -89,8 +89,8 @@ PREFIX dbpedia: <https://dbpedia.org/ontology/>
 PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT (sum(distinct ?montant) as ?coût) WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
-?contrat apco:sigleProcédure ?procedure FILTER regex(?procedure, "DEC-ATTR") OPTIONAL
+?contrat apco:montantPrevisionnelduMarche ?montant.
+?contrat apco:sigleProcedure ?procedure FILTER regex(?procedure, "DEC-ATTR") OPTIONAL
 {?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*")
 }
 ?contrat apco:dateDePublication ?date.
@@ -112,7 +112,7 @@ PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT ?entreprise WHERE {
 ?contrat apco:aPourPrestataire ?entreprise.
-?contrat apco:montantPrévisionnelduMarché ?budget }
+?contrat apco:montantPrevisionnelduMarche ?budget }
 ORDER BY DESC(?budget) LIMIT 100
 
 
@@ -132,14 +132,14 @@ PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT (sum(distinct ?montant) as ?Coût) 
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
-?contrat apco:sigleProcédure ?procedure FILTER regex(?procedure, "DEC-ATTR") OPTIONAL
+?contrat apco:montantPrevisionnelduMarche ?montant.
+?contrat apco:sigleProcedure ?procedure FILTER regex(?procedure, "DEC-ATTR") OPTIONAL
 {?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*")
 }
-{?contrat apco:aPourMaîtreDOuvrage ?maître_d_ouvrage.
-?maître_d_ouvrage apco:sigleMaîtreDOuvrage ?sigleM. FILTER (?sigleM ="SCDP" ) }
+{?contrat apco:aPourMaitreDOuvrage ?maître_d_ouvrage.
+?maître_d_ouvrage apco:sigleMaitreDOuvrage ?sigleM. FILTER (?sigleM ="SCDP" ) }
 OPTIONAL {
-?contrat pc:contractingAutority ?autorité_contractante. ?autorité_contractante apco:sigleAutoritéContractante ?sigleA.
+?contrat pc:contractingAutority ?autorité_contractante. ?autorité_contractante apco:sigleAutoriteContractante ?sigleA.
 FILTER (?sigleA ="SCDP" ) }
 }
 
@@ -198,12 +198,12 @@ PREFIX geofla: <http://data.ign.fr/def/geofla#>
 SELECT ?entreprise
 WHERE {
 ?contrat apco:aPourPrestataire ?entreprise. 
-{ ?contrat apco:sigleProcédure ?procedure
+{ ?contrat apco:sigleProcedure ?procedure
 FILTER regex(?procedure, "DEC-ATTR") } 
 OPTIONAL
 {?contrat dcterms:title ?titre FILTER regex(?titre, ".*attribution.*") }
 ?contrat apco:dateDePublication ?date.
-FILTER (?date >"2017-01-01"^^xsd:date && ?date <"2019-01-01"^^xsd:date ) }
+FILTER (?date >"2014-01-01"^^xsd:date && ?date <"2014-12-31"^^xsd:date ) }
 
 
 ### CQ11 - Liste des contrats par secteur d’activité - TODO (lier avec la nomenclature des activités de l'INS)
@@ -221,7 +221,7 @@ PREFIX dbpedia: <https://dbpedia.org/ontology/>
 PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT ?secteur_d_activité (count(distinct ?contract) as ?nombre) WHERE {
-?contract apco:secteurDActivité ?secteur_d_activité
+?contract apco:secteurDActivite ?secteur_d_activité
 
 ### CQ12- Quelles sont les autorités contractantes ayant passées des contrats avec les montant prévisionnels les plus élevés?
 
@@ -241,7 +241,7 @@ SELECT distinct ?Autorité_contractante ?budget
 WHERE {
 ?contrat pc:contractingAuthority ?AC.
 ?AC rdfs:label ?Autorité_contractante.
-?contrat apco:montantPrévisionnelduMarché ?budget
+?contrat apco:montantPrevisionnelduMarche ?budget
 }
 ORDER BY DESC(?budget) LIMIT 100
 
@@ -261,7 +261,7 @@ PREFIX dbpedia: <https://dbpedia.org/ontology/>
 PREFIX geofla: <http://data.ign.fr/def/geofla#>
 
 SELECT ?contrat WHERE {
-?contrat apco:estFinancéPar ?financement. 
+?contrat apco:estFinancePar ?financement. 
 ?financement apco:sourceDeFinancement ?finance
  FILTER(?finance="BANQUE MONDIALE(BM)")
 }
@@ -285,54 +285,54 @@ SELECT (100*?AOI/?cout_total as ?Appel_d_offre_ouvert_international) (100*?AON/?
 {
 {SELECT (sum(distinct ?montant) as ?DP)
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
 ?contrat pc:procedureType ?type.
 FILTER (?type= "Demande de Proposition.")}
 }
 {SELECT (sum(distinct ?montant) as ?AONR)
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
 ?contrat pc:procedureType ?type.
 FILTER (?type= "Appels d'Offres National Restreint")}
 }
 {SELECT (sum(distinct ?montant) as ?AOIR)
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
 ?contrat pc:procedureType ?type.
 FILTER (?type= "Appels d'Offres International Restreint")}
 }
 {SELECT (sum(distinct ?montant) as ?AO)
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
 ?contrat pc:procedureType ?type. FILTER (?type= "Appels d'Offres")}
 }
 {SELECT (sum(distinct ?montant) as ?BC)
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
   
 ?contrat pc:procedureType ?type. FILTER (?type= "Bon de Commande")}
 }
 {SELECT (sum(distinct ?montant) as ?GAG)
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
 ?contrat pc:procedureType ?type. FILTER (?type= "Gré à Gré")}
 }
 {SELECT (sum(distinct ?montant) as ?AMI)
 WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
 ?contrat pc:procedureType ?type.
 FILTER (?type= "Appel à Manifestation d'Intérêt")}
 }
 {SELECT (sum(distinct ?montant) as ?AON) WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant. ?contrat pc:procedureType ?type.
+?contrat apco:montantPrevisionnelduMarche ?montant. ?contrat pc:procedureType ?type.
 FILTER (?type= "Appels d'Offres National Ouvert")} }
 {SELECT (sum(distinct ?montant) as ?DC) WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant. ?contrat pc:procedureType ?type.
+?contrat apco:montantPrevisionnelduMarche ?montant. ?contrat pc:procedureType ?type.
 FILTER (?type= "Demande de Cotation")} }
 {SELECT (sum(distinct ?montant) as ?AOI) WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant. ?contrat pc:procedureType ?type.
+?contrat apco:montantPrevisionnelduMarche ?montant. ?contrat pc:procedureType ?type.
 FILTER (?type= "Appels d'Offres International Ouvert")} }
 {SELECT (sum(distinct ?montant) as ?cout_total) WHERE {
-?contrat apco:montantPrévisionnelduMarché ?montant.
+?contrat apco:montantPrevisionnelduMarche ?montant.
 } }
 }
