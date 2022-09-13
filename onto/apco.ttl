@@ -197,7 +197,7 @@ dc:identifier
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:string .
 
-<http://data.apco.cm/onto#AppelAManifestationDInterêt>
+<http://data.apco.cm/onto#AppelAManifestationDInteret>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#Publication> ;
   rdfs:label "Appel a manifestation d'intérêt"@fr, "Call for expressions of interest"@en .
@@ -208,7 +208,7 @@ dc:identifier
   rdfs:comment "contrat ecrit par lequel un entrepreneur, un fournisseur ou un prestataire de service s'engage envers l'etat , une collectivité territoriale décentralisée ou un établissement public soit à réaliser des travaux, soit à fournir des biens et des services moyennant un prix"@fr, "written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price"@en ;
   rdfs:label "Appel d'offre"@fr, "Public contract"@en, "Tender"@en .
 
-<http://data.apco.cm/onto#AppelDOffreAveConcours>
+<http://data.apco.cm/onto#AppelDOffreAvecConcours>
   a owl:Class ;
   rdfs:subClassOf <http://data.apco.cm/onto#AppelDOffre> .
 
@@ -311,7 +311,7 @@ The restricted tendering procedure may only be used in the following cases: (1) 
 <http://data.apco.cm/onto#Offre>
   a owl:Class ;
   rdfs:subClassOf gr:Offering ;
-  rdfs:comment "Ensemble de documents administratifs, techniques et financiers constituant la proposition du soumissionaire"@fr, "set of administrative, technical and financial documents constituting the tenderer's proposal"@en ;
+  rdfs:comment "Ensemble de documents administratifs,  techniques et financiers constituant la proposition du soumissionaire"@fr, "set of administrative, technical and financial documents constituting the tenderer's proposal"@en ;
   rdfs:label "Offre"@fr, "Tender"@en .
 
 <http://data.apco.cm/onto#Prestataire>
