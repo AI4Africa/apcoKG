@@ -11,8 +11,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://data.apco.cm/onto">
         <dc:creator rdf:resource="http://atemezing.org"/>
-        <dc:creator rdf:resource="http://data.apco.cm/linkedin.com/in/jules-quentin-kouamo-99259921a"/>
-        <dc:creator rdf:resource="http://data.apco.cm/onto#linkedin.com/in/etienne-kouokam-18a24913"/>
+        <dc:creator rdf:resource="https://linkedin.com/in/jules-quentin-kouamo-99259921a"/>
+        <dc:creator rdf:resource="https://linkedin.com/in/etienne-kouokam-18a24913"/>
         <dc:description xml:lang="fr">APCO est une ontologie ayant pour but la description des termes des marchés publics</dc:description>
         <dc:description xml:lang="en">APCO is an ontology that allows the description of public procurement terms</dc:description>
         <dc:title xml:lang="en">African Public Contract Ontology</dc:title>
