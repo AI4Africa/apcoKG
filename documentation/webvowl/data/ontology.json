@@ -1,0 +1,1362 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "fr", "undefined" ],
+    "baseIris" : [ "http://purl.org/procurement/public-contracts", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://contsem.unizar.es/def/sector-publico/pproc", "http://purl.org/goodrelations/v1", "http://www.w3.org/2000/01/rdf-schema", "https://dbpedia.org/ontology", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://data.ign.fr/def/geofla", "http://data.apco.cm/onto", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "en" : "African Public Contract Ontology"
+    },
+    "iri" : "http://data.apco.cm/onto",
+    "version" : "1.0.0",
+    "author" : [ "http://atemezing.org", "https://linkedin.com/in/etienne-kouokam-18a24913", "https://linkedin.com/in/jules-quentin-kouamo-99259921a" ],
+    "description" : {
+      "en" : "APCO is an ontology that allows the description of public procurement terms",
+      "fr" : "APCO est une ontologie ayant pour but la description des termes des marchés publics"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://linkedin.com/in/jules-quentin-kouamo-99259921a",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://linkedin.com/in/etienne-kouokam-18a24913",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://atemezing.org",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "African Public Contract Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://data.apco.cm/onto#Financement",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Financement",
+      "en" : "Funding",
+      "fr" : "Financement"
+    },
+    "comment" : {
+      "en" : "Class designating the body responsible for financing a public contract",
+      "fr" : "Classe désignant l'organe chargé de financer un marché public"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffreInternationalRestreint",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffreInternationalRestreint",
+      "en" : "Restricted international tender",
+      "fr" : "Appel d'offre international restreint"
+    },
+    "comment" : {
+      "en" : "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders.",
+      "fr" : "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://purl.org/goodrelations/v1#BusinessEntity",
+    "baseIri" : "http://purl.org/goodrelations/v1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessEntity"
+    },
+    "subClasses" : [ "9", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/goodrelations/v1#Offering",
+    "baseIri" : "http://purl.org/goodrelations/v1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offering"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://data.apco.cm/onto#DecisionDAnnulation",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DecisionDAnnulation",
+      "en" : "Cancellation decision",
+      "fr" : "Décision d'annulation"
+    },
+    "comment" : {
+      "en" : "Procedure for canceling a tender",
+      "fr" : "Procédure d'annulation d'un appel d'offre"
+    },
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://dbpedia.org/ontology/Department",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Department"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://data.apco.cm/onto#DecisionDAttribution",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DecisionDAttribution",
+      "en" : "Award decision",
+      "fr" : "Décision d'attribution"
+    },
+    "comment" : {
+      "en" : "Procedure for awarding a call for tenders",
+      "fr" : "Procédure d'attribution d'un appel d'offre"
+    },
+    "id" : "30",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://data.apco.cm/onto#AutoriteContractante",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutoriteContractante",
+      "en" : "Contracting authority",
+      "fr" : "Autorité contractante"
+    },
+    "comment" : {
+      "en" : "Natural person skilled in leading the contracting process and signing the related contracts",
+      "fr" : "Personne physique ou morale habilelé à conduire le processus de contractualisation et de signer les marchés y relatifs"
+    },
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#DemandeDeCotation",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DemandeDeCotation",
+      "en" : "APriceQuote",
+      "fr" : "DemandeDeCotation"
+    },
+    "comment" : {
+      "en" : "simplified procedure for consulting companies for the awarding of certain job orders relating to the supply of goods and services or to any other smaller-scale services that do not require the preparation of technical offers",
+      "fr" : "Procédure simplifiée de consultation d’entreprises pour la passation de certaines lettres-commandes relatives aux fournitures de biens et services ou à toutes autres prestations de moindre envergure ne nécessitant pas l’élaboration d’offres techniques."
+    },
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffreNationalOuvert",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffreNationalOuvert",
+      "en" : "Open national tender",
+      "fr" : "Appel d'offre national ouvert"
+    },
+    "comment" : {
+      "en" : "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market.",
+      "fr" : "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."
+    },
+    "id" : "37",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://linkedin.com/in/jules-quentin-kouamo-99259921a",
+      "baseIri" : "https://linkedin.com/in",
+      "labels" : {
+        "IRI-based" : "jules-quentin-kouamo-99259921a"
+      }
+    }, {
+      "iri" : "http://atemezing.org",
+      "baseIri" : "http:/",
+      "labels" : {
+        "IRI-based" : "atemezing.org"
+      }
+    }, {
+      "iri" : "https://linkedin.com/in/etienne-kouokam-18a24913",
+      "baseIri" : "https://linkedin.com/in",
+      "labels" : {
+        "IRI-based" : "etienne-kouokam-18a24913"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://data.apco.cm/onto#MaitreDOuvrage",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaitreDOuvrage",
+      "en" : "Building owner",
+      "fr" : "Maître d'ouvrage"
+    },
+    "comment" : {
+      "fr" : "Chef de département ministériel ou assimilé, chef de l'exécutif d'une collectivité territoriale décentralisée, et directeur général d'un établissement public, représentant l'administration bénéficiaire des prestations prévues dans le marché."
+    },
+    "id" : "41"
+  }, {
+    "iri" : "https://dbpedia.org/ontology/Region",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://dbpedia.org/ontology/City",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffreOuvert",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffreOuvert",
+      "en" : "open tender",
+      "fr" : "Appel d'offre ouvert"
+    },
+    "subClasses" : [ "32", "37" ],
+    "id" : "33",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffreAvecConcours",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffreAvecConcours"
+    },
+    "id" : "69",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#Prestataire",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Prestataire",
+      "en" : "Provider",
+      "fr" : "Prestataire"
+    },
+    "comment" : {
+      "fr" : "Personne physique ou morale, titulaire d'un marché public"
+    },
+    "id" : "22",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#appelDoffre_national_restreint",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "appelDoffre_national_restreint",
+      "en" : "Restricted national tender",
+      "fr" : "Appel d'offre national restreint"
+    },
+    "comment" : {
+      "en" : "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market.",
+      "fr" : "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."
+    },
+    "id" : "29",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelAManifestationDInterêt",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelAManifestationDInterêt",
+      "en" : "Call for expressions of interest",
+      "fr" : "Appel a manifestation d'intérêt"
+    },
+    "id" : "63",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffreRestreint",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffreRestreint",
+      "en" : "Restricted tender",
+      "fr" : "Appel d'offre restreint"
+    },
+    "subClasses" : [ "29", "6" ],
+    "comment" : {
+      "en" : "Restricted call for tenders is now addressed to all candidates selected following a pre-qualification procedure and no longer to a limited number of candidates among those pre-qualified.\n\nThe pre-qualification report, drawn up by the Contracting Authority or the Contracting Authority's Representative and accompanied by the draft tender dossier with the proposal for shortlists, is submitted to the competent procurement commission for examination.\n\nThe restricted tendering procedure may only be used in the following cases: (1) specific works or equipment of great importance or complexity; (2) specialized supplies and services; (3) intellectual services.",
+      "fr" : "L’appel d’offres restreint s’adresse désormais à l’ensemble des candidats retenus à l’issue d’une procédure de pré-qualification et non plus à un nombre limité de candidats parmi ceux pré-qualifiés.\n\nLe rapport de pré-qualification, rédigé par le Maître d’Ouvrage ou le Maître d’Ouvrage Délégué et accompagné du projet de dossier d’appel d’offres avec la proposition de listes restreintes, est soumis à la commission des marchés compétente pour examen.\n\nLa procédure d’appel d’offres restreint ne peut être utilisée que dans les cas suivants : (1) travaux ou équipements spécifiques de grande importance ou complexes ; (2) fournitures et services spécialisés ; (3) prestations intellectuelles."
+    },
+    "id" : "7",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://data.apco.cm/onto#Offre",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offre",
+      "en" : "Tender",
+      "fr" : "Offre"
+    },
+    "comment" : {
+      "en" : "set of administrative, technical and financial documents constituting the tenderer's proposal",
+      "fr" : "Ensemble de documents administratifs, techniques et financiers constituant la proposition du soumissionaire"
+    },
+    "id" : "15",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#IngenieurDuMarche",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IngenieurDuMarche",
+      "en" : "market engineer",
+      "fr" : "Ingénieur du marché"
+    },
+    "comment" : {
+      "en" : "Natural or legal person governed by public law accredited by the Project Owner or the Delegated Project Owner, for the monitoring and technical and financial control of the performance of the contract.",
+      "fr" : "Personne physique ou morale de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué, pour le suivi et le contrôle technique et financier de l'exécution du marché."
+    },
+    "id" : "90"
+  }, {
+    "iri" : "http://data.apco.cm/onto#ChefDeServiceDuMarche",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChefDeServiceDuMarche",
+      "en" : "Market service manager",
+      "fr" : "Chef de service du marché"
+    },
+    "comment" : {
+      "en" : "Natural person under public law accredited by the Project Owner or the Delegated Project Owner for general assistance of an administrative, financial and technical nature at the stage of definition, development, execution and acceptance of the services, market objects.",
+      "fr" : "Personne physique de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué pour une assistance générale à caractère administratif, financier et technique au stade de la définition, de l'élaboration, de l'exécution et de la réception des prestations, objets du marché."
+    },
+    "id" : "77"
+  }, {
+    "iri" : "http://data.apco.cm/onto#Soumissionnaire",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Soumissionnaire",
+      "en" : "Tenderer",
+      "fr" : "Soumissionnaire"
+    },
+    "subClasses" : [ "22" ],
+    "comment" : {
+      "en" : "Natural person who made a bid to the contracting authority",
+      "fr" : "Personne physique aui fait une offre à l'endroit de l'autorité contractante"
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffreEnDeuxEtapes",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffreEnDeuxEtapes"
+    },
+    "id" : "58",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#Publication",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Publication",
+      "en" : "Publication",
+      "fr" : "Communiqué"
+    },
+    "subClasses" : [ "16", "4", "30", "63", "59" ],
+    "comment" : {
+      "en" : "The publication class designates all the documents that are published in the public procurement journal",
+      "fr" : "La classe publication désigne l'ensemble des documents qui sont publié dans le journal des marchés publics."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffre",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffre",
+      "en" : "Tender ",
+      "fr" : "Appel d'offre"
+    },
+    "subClasses" : [ "69", "33", "58", "7" ],
+    "comment" : {
+      "en" : "written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price",
+      "fr" : "contrat ecrit par lequel un entrepreneur, un fournisseur ou un prestataire de service s'engage envers l'etat , une collectivité territoriale décentralisée ou un établissement public soit à réaliser des travaux, soit à fournir des biens et des services moyennant un prix"
+    },
+    "id" : "59",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://data.apco.cm/onto#MaitreDOeuvre",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaitreDOeuvre",
+      "en" : "Project manager",
+      "fr" : "maître d'oeuvre"
+    },
+    "comment" : {
+      "en" : "A natural or legal person governed by public or private law, charged by the contracting authority or the delegated contracting authority to guarantee its interests at the stage of definition, development, management of the execution and acceptance of the provision of market objects.",
+      "fr" : "Personne physique ou morale de droit public ou privé, chargée par le maître d'ouvrage ou le maître d'ouvrage déléguéde garantir ses intérêts au stade de la définition, de l'élaboration, de la direction de l'exécution et de la reception des prestation objets du marché."
+    },
+    "id" : "95"
+  }, {
+    "iri" : "http://data.apco.cm/onto#AppelDOffreInternationalOuvert",
+    "baseIri" : "http://data.apco.cm/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppelDOffreInternationalOuvert",
+      "en" : "Open international tender",
+      "fr" : "Appel d'offre international ouvert"
+    },
+    "comment" : {
+      "en" : "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders.",
+      "fr" : "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."
+    },
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/procurement/public-contracts#procedureType",
+    "baseIri" : "http://purl.org/procurement/public-contracts",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "procedureType"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.org/dc/terms/date",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "date"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://data.apco.cm/onto#heureDeCloture",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "heureDeCloture",
+      "en" : "closing time",
+      "fr" : "heure de clôture"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property indicating the closing time of a publication",
+      "fr" : "Proprieté indiquant l'heure de clôture d'une publication"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "17"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "10",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://data.apco.cm/onto#sourceDeFinancement",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "sourceDeFinancement",
+      "en" : "source of funding",
+      "fr" : "source de financement"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "range" : "14",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "7",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "33",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://data.apco.cm/onto#sigleAutoriteContractante",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "sigleAutoriteContractante",
+      "en" : "acronym prime contractor",
+      "fr" : "sigle autorité contractante"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://data.apco.cm/onto#attribueA",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "attribueA"
+    },
+    "domain" : "41",
+    "comment" : {
+      "fr" : "Property indicating to whom an owner assigns a tender"
+    },
+    "attributes" : [ "object", "transitive" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://data.apco.cm/onto#dateDeCloture",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "dateDeCloture",
+      "en" : "closing date",
+      "fr" : "date de clôture"
+    },
+    "domain" : "12",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://dbpedia.org/ontology/department",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "department"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://data.apco.cm/onto#dateDePublication",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "dateDePublication",
+      "en" : "publication date",
+      "fr" : "date de publication"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "property indicating the publication date of a Publication",
+      "fr" : "proprieté indiquant la date de publication d'une Publication"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://data.apco.cm/onto#secteurDActivite",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "secteurDActivite",
+      "en" : "activity area",
+      "fr" : "secteur d'activité"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://data.apco.cm/onto#designationAutoriteContractante",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "designationAutoriteContractante",
+      "en" : "designation contracting autority",
+      "fr" : "désignation autorité contractante"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "59",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "59",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "1",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "64"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://data.apco.cm/onto#prestataire",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "prestataire",
+      "en" : "has provider",
+      "fr" : "a pour prestataire"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property indicating that a tender is awarded to a provider",
+      "fr" : "Proprieté indiquant le prestataire d'un marché public"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://data.ign.fr/def/geofla#region",
+    "baseIri" : "http://data.ign.fr/def/geofla",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "region"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "67"
+  }, {
+    "range" : "59",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "1",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://purl.org/procurement/public-contracts#bidder",
+    "baseIri" : "http://purl.org/procurement/public-contracts",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "bidder"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "asymmetric", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://data.apco.cm/onto#faitUneOffre",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "faitUneOffre",
+      "en" : "make an Offer",
+      "fr" : "fait ne Offre"
+    },
+    "maxCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "Property indicating the offer made by a bidder. (cardinality 0..1)",
+      "fr" : "Proprieté indiquant l'offre faite par un soumissionnaire. (cardinalité 0..1)"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://data.apco.cm/onto#sigleProcedure",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "sigleProcedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://data.apco.cm/onto#montantPrevisionnelduMarche",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "montantPrevisionnelduMarche",
+      "en" : "estimated amount",
+      "fr" : "montant prévisionnel du marché"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://data.apco.cm/onto#chefDeServiceDuMarche",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "chefDeServiceDuMarche",
+      "en" : "market Service Manager",
+      "fr" : "Chef du Service du Marché"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "property indicating the head of the market department of a public market",
+      "fr" : "proprieté indiquant le chef de service du marché d'un marché public"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://contsem.unizar.es/def/sector-publico/pproc#numberOfLots",
+    "baseIri" : "http://contsem.unizar.es/def/sector-publico/pproc",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "numberOfLots"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://data.apco.cm/onto#naturePrestation",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "naturePrestation",
+      "en" : "nature of service",
+      "fr" : "nature prestation"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://data.apco.cm/onto#attribue",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "attribue",
+      "en" : "assigns",
+      "fr" : "attribue"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "Property indicating that a building owner awards a tender",
+      "fr" : "Proprieté indiquant qu'un maître d'ouvrage attribue un appel d'offre"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://dbpedia.org/ontology/locationCity",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "locationCity"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://data.apco.cm/onto#idPublication",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "idPublication",
+      "en" : "publication id",
+      "fr" : "id publication"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "range" : "7",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://data.apco.cm/onto#dateDeSignature",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "dateDeSignature",
+      "en" : "signature date",
+      "fr" : "date de signature"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property indicating the the date of signing of a publication",
+      "fr" : "Proprieté indiquant la date de signature d'une publication"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://data.apco.cm/onto#estFinancePar",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "estFinancePar",
+      "en" : "is funded By",
+      "fr" : "est financé Par"
+    },
+    "minCardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property indicating the source of funding for a public contract",
+      "fr" : "Propriété indiquant la source de financement d'un marché public"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://data.apco.cm/onto#aPourMaitreDOuvrage",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "aPourMaitreDOuvrage",
+      "en" : "has building owner",
+      "fr" : "a pour maître D'Ouvrage"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property indicating the building owner of a public contract",
+      "fr" : "Proprieté indiquant le maître d'ouvrage d'un marché public"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://data.apco.cm/onto#designationMaitreDOuvrage",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "designationMaitreDOuvrage",
+      "en" : "designation building owner",
+      "fr" : "désignation maître d'ouvrage"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://data.apco.cm/onto#sigleMaitreDOuvrage",
+    "baseIri" : "http://data.apco.cm/onto",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "sigleMaitreDOuvrage",
+      "en" : "acronym building owner",
+      "fr" : "sigle maître d'ouvrage"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://purl.org/procurement/public-contracts#contractingAuthority",
+    "baseIri" : "http://purl.org/procurement/public-contracts",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "contractingAuthority"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "asymmetric", "external" ],
+    "id" : "97"
+  } ]
+}
