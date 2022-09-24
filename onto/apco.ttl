@@ -8,7 +8,8 @@
 <http://data.apco.cm/onto>
   a owl:Ontology ;
   dc:creator <http://atemezing.org>, <http://data.apco.cm/linkedin.com/in/jules-quentin-kouamo-99259921a>, <http://data.apco.cm/onto#linkedin.com/in/etienne-kouokam-18a24913> ;
-  dc:description "APCO est une ontologie ayant pour but la description des termes des marchés publics"@fr, "APCO is an ontology that allows the description of public procurement terms"@en ;
+  dc:description "APCO est une ontologie ayant pour but la description des termes des marchés publics"@fr, 
+  "APCO is an ontology that allows the description of public procurement terms"@en ;
   dc:title "African Public Contract Ontology"@en ;
   dc:issued "2022-08-31";
   owl:versionInfo "1.0.0" .
@@ -145,17 +146,17 @@ dc:title
   rdfs:range xsd:int ;
   rdfs:label "idPublication"@fr, "publicationID"@en .
 
-<http://data.apco.cm/onto#montantPrévisionnelduMarché>
+<http://data.apco.cm/onto#montantPrevisionnelduMarche>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:int ;
-  rdfs:label "estimatedAmount"@en, "montantPrévisionnelDuMarché"@fr .
+  rdfs:label "estimated Amount"@en, "montant Prévisionnel du Marché"@fr .
 
 <http://data.apco.cm/onto#naturePrestation>
   a owl:DatatypeProperty ;
   rdfs:domain <http://data.apco.cm/onto#Publication> ;
   rdfs:range xsd:string ;
-  rdfs:label "naturePrestation"@fr, "natureofService"@en .
+  rdfs:label "nature Prestation"@fr, "nature of Service"@en .
 
 <http://data.apco.cm/onto#secteurDActivité>
   a owl:DatatypeProperty ;
