@@ -7,11 +7,12 @@
 
 <http://data.apco.cm/onto>
   a owl:Ontology ;
-  dc:creator <http://atemezing.org>, <http://data.apco.cm/linkedin.com/in/jules-quentin-kouamo-99259921a>, <http://data.apco.cm/onto#linkedin.com/in/etienne-kouokam-18a24913> ;
+  dc:creator <http://atemezing.org>, <https://linkedin.com/in/jules-quentin-kouamo-99259921a>, <https://linkedin.com/in/etienne-kouokam-18a24913> ;
   dc:description "APCO est une ontologie ayant pour but la description des termes des marchés publics"@fr, 
   "APCO is an ontology that allows the description of public procurement terms"@en ;
   dc:title "African Public Contract Ontology"@en ;
-  dc:issued "2022-08-31";
+  dc:issued "2022-08-31"^^xsd:date;
+  dc:modified "2022-09-22"^^xsd:date;
   owl:versionInfo "1.0.0" .
 
 dc:creator a owl:AnnotationProperty .
