@@ -1,0 +1,983 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://data.apco.cm/onto#estFinancePar"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://data.apco.cm/onto#faitUneOffre"
+  } ]
+}, {
+  "@id" : "http://atemezing.org",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://contsem.unizar.es/def/sector-publico/pproc#numberOfLots",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://atemezing.org"
+  }, {
+    "@id" : "https://linkedin.com/in/etienne-kouokam-18a24913"
+  }, {
+    "@id" : "https://linkedin.com/in/jules-quentin-kouamo-99259921a"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "fr",
+    "@value" : "APCO est une ontologie ayant pour but la description des termes des marchés publics"
+  }, {
+    "@language" : "en",
+    "@value" : "APCO is an ontology that allows the description of public procurement terms"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "African Public Contract Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelAManifestationDInterêt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel a manifestation d'intérêt"
+  }, {
+    "@language" : "en",
+    "@value" : "Call for expressions of interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "contrat ecrit par lequel un entrepreneur, un fournisseur ou un prestataire de service s'engage envers l'etat , une collectivité territoriale décentralisée ou un établissement public soit à réaliser des travaux, soit à fournir des biens et des services moyennant un prix"
+  }, {
+    "@language" : "en",
+    "@value" : "written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel d'offre"
+  }, {
+    "@language" : "en",
+    "@value" : "Public contract"
+  }, {
+    "@language" : "en",
+    "@value" : "Tender "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffreAvecConcours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffre"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffreEnDeuxEtapes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffre"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffreInternationalOuvert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."
+  }, {
+    "@language" : "en",
+    "@value" : "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel d'offre international ouvert"
+  }, {
+    "@language" : "en",
+    "@value" : "Open international tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffreOuvert"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffreInternationalRestreint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."
+  }, {
+    "@language" : "en",
+    "@value" : "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel d'offre international restreint"
+  }, {
+    "@language" : "en",
+    "@value" : "Restricted international tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffreRestreint"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffreNationalOuvert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."
+  }, {
+    "@language" : "en",
+    "@value" : "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel d'offre national ouvert"
+  }, {
+    "@language" : "en",
+    "@value" : "Open national tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffreOuvert"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffreOuvert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel d'offre ouvert"
+  }, {
+    "@language" : "en",
+    "@value" : "open tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffre"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffreRestreint"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AppelDOffreRestreint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "L’appel d’offres restreint s’adresse désormais à l’ensemble des candidats retenus à l’issue d’une procédure de pré-qualification et non plus à un nombre limité de candidats parmi ceux pré-qualifiés.\n\nLe rapport de pré-qualification, rédigé par le Maître d’Ouvrage ou le Maître d’Ouvrage Délégué et accompagné du projet de dossier d’appel d’offres avec la proposition de listes restreintes, est soumis à la commission des marchés compétente pour examen.\n\nLa procédure d’appel d’offres restreint ne peut être utilisée que dans les cas suivants : (1) travaux ou équipements spécifiques de grande importance ou complexes ; (2) fournitures et services spécialisés ; (3) prestations intellectuelles."
+  }, {
+    "@language" : "en",
+    "@value" : "Restricted call for tenders is now addressed to all candidates selected following a pre-qualification procedure and no longer to a limited number of candidates among those pre-qualified.\n\nThe pre-qualification report, drawn up by the Contracting Authority or the Contracting Authority's Representative and accompanied by the draft tender dossier with the proposal for shortlists, is submitted to the competent procurement commission for examination.\n\nThe restricted tendering procedure may only be used in the following cases: (1) specific works or equipment of great importance or complexity; (2) specialized supplies and services; (3) intellectual services."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel d'offre restreint"
+  }, {
+    "@language" : "en",
+    "@value" : "Restricted tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffre"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#AutoriteContractante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Natural person skilled in leading the contracting process and signing the related contracts"
+  }, {
+    "@language" : "fr",
+    "@value" : "Personne physique ou morale habilelé à conduire le processus de contractualisation et de signer les marchés y relatifs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Autorité contractante"
+  }, {
+    "@language" : "en",
+    "@value" : "Contracting authority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#ChefDeServiceDuMarche",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Natural person under public law accredited by the Project Owner or the Delegated Project Owner for general assistance of an administrative, financial and technical nature at the stage of definition, development, execution and acceptance of the services, market objects."
+  }, {
+    "@language" : "fr",
+    "@value" : "Personne physique de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué pour une assistance générale à caractère administratif, financier et technique au stade de la définition, de l'élaboration, de l'exécution et de la réception des prestations, objets du marché."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Chef de service du marché"
+  }, {
+    "@language" : "en",
+    "@value" : "Market service manager"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#DecisionDAnnulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Procedure for canceling a tender"
+  }, {
+    "@language" : "fr",
+    "@value" : "Procédure d'annulation d'un appel d'offre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cancellation decision"
+  }, {
+    "@language" : "fr",
+    "@value" : "Décision d'annulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#DecisionDAttribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Procedure for awarding a call for tenders"
+  }, {
+    "@language" : "fr",
+    "@value" : "Procédure d'attribution d'un appel d'offre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Award decision"
+  }, {
+    "@language" : "fr",
+    "@value" : "Décision d'attribution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#DemandeDeCotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Procédure simplifiée de consultation d’entreprises pour la passation de certaines lettres-commandes relatives aux fournitures de biens et services ou à toutes autres prestations de moindre envergure ne nécessitant pas l’élaboration d’offres techniques."
+  }, {
+    "@language" : "en",
+    "@value" : "simplified procedure for consulting companies for the awarding of certain job orders relating to the supply of goods and services or to any other smaller-scale services that do not require the preparation of technical offers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "APriceQuote"
+  }, {
+    "@language" : "fr",
+    "@value" : "DemandeDeCotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#Financement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class designating the body responsible for financing a public contract"
+  }, {
+    "@language" : "fr",
+    "@value" : "Classe désignant l'organe chargé de financer un marché public"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Financement"
+  }, {
+    "@language" : "en",
+    "@value" : "Funding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#IngenieurDuMarche",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Natural or legal person governed by public law accredited by the Project Owner or the Delegated Project Owner, for the monitoring and technical and financial control of the performance of the contract."
+  }, {
+    "@language" : "fr",
+    "@value" : "Personne physique ou morale de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué, pour le suivi et le contrôle technique et financier de l'exécution du marché."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Ingénieur du marché"
+  }, {
+    "@language" : "en",
+    "@value" : "market engineer"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#MaitreDOeuvre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A natural or legal person governed by public or private law, charged by the contracting authority or the delegated contracting authority to guarantee its interests at the stage of definition, development, management of the execution and acceptance of the provision of market objects."
+  }, {
+    "@language" : "fr",
+    "@value" : "Personne physique ou morale de droit public ou privé, chargée par le maître d'ouvrage ou le maître d'ouvrage déléguéde garantir ses intérêts au stade de la définition, de l'élaboration, de la direction de l'exécution et de la reception des prestation objets du marché."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Project manager"
+  }, {
+    "@language" : "fr",
+    "@value" : "maître d'oeuvre"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#MaitreDOuvrage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Chef de département ministériel ou assimilé, chef de l'exécutif d'une collectivité territoriale décentralisée, et directeur général d'un établissement public, représentant l'administration bénéficiaire des prestations prévues dans le marché."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Building owner"
+  }, {
+    "@language" : "fr",
+    "@value" : "Maître d'ouvrage"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#Offre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Ensemble de documents administratifs, techniques et financiers constituant la proposition du soumissionaire"
+  }, {
+    "@language" : "en",
+    "@value" : "set of administrative, technical and financial documents constituting the tenderer's proposal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Offre"
+  }, {
+    "@language" : "en",
+    "@value" : "Tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#Offering"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#Prestataire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Personne physique ou morale, titulaire d'un marché public"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Prestataire"
+  }, {
+    "@language" : "en",
+    "@value" : "Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#Soumissionnaire"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#Publication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "La classe publication désigne l'ensemble des documents qui sont publié dans le journal des marchés publics."
+  }, {
+    "@language" : "en",
+    "@value" : "The publication class designates all the documents that are published in the public procurement journal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Communiqué"
+  }, {
+    "@language" : "en",
+    "@value" : "Publication"
+  }, {
+    "@language" : "fr",
+    "@value" : "Publication"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#Soumissionnaire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Natural person who made a bid to the contracting authority"
+  }, {
+    "@language" : "fr",
+    "@value" : "Personne physique aui fait une offre à l'endroit de l'autorité contractante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Soumissionnaire"
+  }, {
+    "@language" : "en",
+    "@value" : "Tenderer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/goodrelations/v1#BusinessEntity"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#aPourMaitreDOuvrage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property indicating the building owner of a public contract"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proprieté indiquant le maître d'ouvrage d'un marché public"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "a pour maître D'Ouvrage"
+  }, {
+    "@language" : "en",
+    "@value" : "has building owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#MaitreDOuvrage"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#appelDoffre_national_restreint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."
+  }, {
+    "@language" : "en",
+    "@value" : "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Appel d'offre national restreint"
+  }, {
+    "@language" : "en",
+    "@value" : "Restricted national tender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://data.apco.cm/onto#AppelDOffreRestreint"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#attribue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property indicating that a building owner awards a tender"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proprieté indiquant qu'un maître d'ouvrage attribue un appel d'offre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#MaitreDOuvrage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "assigns"
+  }, {
+    "@language" : "fr",
+    "@value" : "attribue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#attribueA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fr",
+    "@value" : "Property indicating to whom an owner assigns a tender"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proprieté indiquant à qui un maître d'ouvrage attribue un appel d'offre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#MaitreDOuvrage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#Prestataire"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#chefDeServiceDuMarche",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "property indicating the head of the market department of a public market"
+  }, {
+    "@language" : "fr",
+    "@value" : "proprieté indiquant le chef de service du marché d'un marché public"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Chef du Service du Marché"
+  }, {
+    "@language" : "en",
+    "@value" : "market Service Manager"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#ChefDeServiceDuMarche"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#dateDeCloture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "closing date"
+  }, {
+    "@language" : "fr",
+    "@value" : "date de clôture"
+  }, {
+    "@language" : "en",
+    "@value" : "property indicating the closing date of a publication"
+  }, {
+    "@language" : "fr",
+    "@value" : "proprieté indiquant la date de clôture d'une publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#dateDePublication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "property indicating the publication date of a Publication"
+  }, {
+    "@language" : "fr",
+    "@value" : "proprieté indiquant la date de publication d'une Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "date de publication"
+  }, {
+    "@language" : "en",
+    "@value" : "publication date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#dateDeSignature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property indicating the the date of signing of a publication"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proprieté indiquant la date de signature d'une publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "date de signature"
+  }, {
+    "@language" : "en",
+    "@value" : "signature date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#designationAutoriteContractante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#AutoriteContractante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "designation contracting autority"
+  }, {
+    "@language" : "fr",
+    "@value" : "désignation autorité contractante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#designationMaitreDOuvrage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#MaitreDOuvrage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "designation building owner"
+  }, {
+    "@language" : "fr",
+    "@value" : "désignation maître d'ouvrage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#estFinancePar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property indicating the source of funding for a public contract"
+  }, {
+    "@language" : "fr",
+    "@value" : "Propriété indiquant la source de financement d'un marché public"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "est financé Par"
+  }, {
+    "@language" : "en",
+    "@value" : "is funded By"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#Financement"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#faitUneOffre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property indicating the offer made by a bidder. (cardinality 0..1)"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proprieté indiquant l'offre faite par un soumissionnaire. (cardinalité 0..1)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Soumissionnaire"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "fait ne Offre"
+  }, {
+    "@language" : "en",
+    "@value" : "make an Offer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#Offre"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#heureDeCloture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property indicating the closing time of a publication"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proprieté indiquant l'heure de clôture d'une publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "closing time"
+  }, {
+    "@language" : "fr",
+    "@value" : "heure de clôture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#idPublication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "id publication"
+  }, {
+    "@language" : "en",
+    "@value" : "publication id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#montantPrevisionnelduMarche",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "estimated amount"
+  }, {
+    "@language" : "fr",
+    "@value" : "montant prévisionnel du marché"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#naturePrestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nature of service"
+  }, {
+    "@language" : "fr",
+    "@value" : "nature prestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#prestataire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property indicating that a tender is awarded to a provider"
+  }, {
+    "@language" : "fr",
+    "@value" : "Proprieté indiquant le prestataire d'un marché public"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "a pour prestataire"
+  }, {
+    "@language" : "en",
+    "@value" : "has provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#Prestataire"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#secteurDActivite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "activity area"
+  }, {
+    "@language" : "fr",
+    "@value" : "secteur d'activité"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#sigleAutoriteContractante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#AutoriteContractante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "acronym prime contractor"
+  }, {
+    "@language" : "fr",
+    "@value" : "sigle autorité contractante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#sigleMaitreDOuvrage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#MaitreDOuvrage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "acronym building owner"
+  }, {
+    "@language" : "fr",
+    "@value" : "sigle maître d'ouvrage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#sigleProcedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.apco.cm/onto#sourceDeFinancement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Financement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "source de financement"
+  }, {
+    "@language" : "en",
+    "@value" : "source of funding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://data.ign.fr/def/geofla#region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/ontology/Region"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/goodrelations/v1#BusinessEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/goodrelations/v1#Offering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/procurement/public-contracts#bidder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#Soumissionnaire"
+  } ]
+}, {
+  "@id" : "http://purl.org/procurement/public-contracts#contractingAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.apco.cm/onto#AutoriteContractante"
+  } ]
+}, {
+  "@id" : "http://purl.org/procurement/public-contracts#procedureType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://dbpedia.org/ontology/City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://dbpedia.org/ontology/Department",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://dbpedia.org/ontology/Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://dbpedia.org/ontology/department",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/ontology/Department"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/ontology/locationCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.apco.cm/onto#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/ontology/City"
+  } ]
+}, {
+  "@id" : "https://linkedin.com/in/etienne-kouokam-18a24913",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "https://linkedin.com/in/jules-quentin-kouamo-99259921a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+} ]

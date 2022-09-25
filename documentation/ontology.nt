@@ -1,0 +1,496 @@
+<http://data.apco.cm/onto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://data.apco.cm/onto> <http://purl.org/dc/terms/creator> <http://atemezing.org> .
+<http://data.apco.cm/onto> <http://purl.org/dc/terms/creator> <https://linkedin.com/in/etienne-kouokam-18a24913> .
+<http://data.apco.cm/onto> <http://purl.org/dc/terms/creator> <https://linkedin.com/in/jules-quentin-kouamo-99259921a> .
+<http://data.apco.cm/onto> <http://purl.org/dc/terms/description> "APCO est une ontologie ayant pour but la description des termes des marchés publics"@fr .
+<http://data.apco.cm/onto> <http://purl.org/dc/terms/description> "APCO is an ontology that allows the description of public procurement terms"@en .
+<http://data.apco.cm/onto> <http://purl.org/dc/terms/title> "African Public Contract Ontology"@en .
+<http://data.apco.cm/onto> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.apco.cm/onto#aPourMaitreDOuvrage
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#MaitreDOuvrage> .
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating the building owner of a public contract"@en .
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#comment> "Proprieté indiquant le maître d'ouvrage d'un marché public"@fr .
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "a pour maître D'Ouvrage"@fr .
+<http://data.apco.cm/onto#aPourMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "has building owner"@en .
+# 
+# http://data.apco.cm/onto#attribue
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#MaitreDOuvrage> .
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating that a building owner awards a tender"@en .
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/2000/01/rdf-schema#comment> "Proprieté indiquant qu'un maître d'ouvrage attribue un appel d'offre"@fr .
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/2000/01/rdf-schema#label> "assigns"@en .
+<http://data.apco.cm/onto#attribue> <http://www.w3.org/2000/01/rdf-schema#label> "attribue"@fr .
+# 
+# http://data.apco.cm/onto#attribueA
+<http://data.apco.cm/onto#attribueA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.apco.cm/onto#attribueA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://data.apco.cm/onto#attribueA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#MaitreDOuvrage> .
+<http://data.apco.cm/onto#attribueA> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#Prestataire> .
+<http://data.apco.cm/onto#attribueA> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating to whom an owner assigns a tender"@fr .
+<http://data.apco.cm/onto#attribueA> <http://www.w3.org/2000/01/rdf-schema#comment> "Proprieté indiquant à qui un maître d'ouvrage attribue un appel d'offre"@fr .
+# 
+# http://data.apco.cm/onto#chefDeServiceDuMarche
+<http://data.apco.cm/onto#chefDeServiceDuMarche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.apco.cm/onto#chefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#chefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#ChefDeServiceDuMarche> .
+<http://data.apco.cm/onto#chefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#comment> "property indicating the head of the market department of a public market"@en .
+<http://data.apco.cm/onto#chefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#comment> "proprieté indiquant le chef de service du marché d'un marché public"@fr .
+<http://data.apco.cm/onto#chefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#label> "Chef du Service du Marché"@fr .
+<http://data.apco.cm/onto#chefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#label> "market Service Manager"@en .
+# 
+# http://data.apco.cm/onto#estFinancePar
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#Financement> .
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating the source of funding for a public contract"@en .
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/2000/01/rdf-schema#comment> "Propriété indiquant la source de financement d'un marché public"@fr .
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/2000/01/rdf-schema#label> "est financé Par"@fr .
+<http://data.apco.cm/onto#estFinancePar> <http://www.w3.org/2000/01/rdf-schema#label> "is funded By"@en .
+# 
+# http://data.apco.cm/onto#faitUneOffre
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Soumissionnaire> .
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#Offre> .
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating the offer made by a bidder. (cardinality 0..1)"@en .
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/2000/01/rdf-schema#comment> "Proprieté indiquant l'offre faite par un soumissionnaire. (cardinalité 0..1)"@fr .
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/2000/01/rdf-schema#label> "fait ne Offre"@fr .
+<http://data.apco.cm/onto#faitUneOffre> <http://www.w3.org/2000/01/rdf-schema#label> "make an Offer"@en .
+# 
+# http://data.apco.cm/onto#prestataire
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#Prestataire> .
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating that a tender is awarded to a provider"@en .
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/2000/01/rdf-schema#comment> "Proprieté indiquant le prestataire d'un marché public"@fr .
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/2000/01/rdf-schema#label> "a pour prestataire"@fr .
+<http://data.apco.cm/onto#prestataire> <http://www.w3.org/2000/01/rdf-schema#label> "has provider"@en .
+# 
+# http://data.ign.fr/def/geofla#region
+<http://data.ign.fr/def/geofla#region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.ign.fr/def/geofla#region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.ign.fr/def/geofla#region> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/Region> .
+# 
+# http://purl.org/procurement/public-contracts#bidder
+<http://purl.org/procurement/public-contracts#bidder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/procurement/public-contracts#bidder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://purl.org/procurement/public-contracts#bidder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://purl.org/procurement/public-contracts#bidder> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#Soumissionnaire> .
+# 
+# http://purl.org/procurement/public-contracts#contractingAuthority
+<http://purl.org/procurement/public-contracts#contractingAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/procurement/public-contracts#contractingAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://purl.org/procurement/public-contracts#contractingAuthority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://purl.org/procurement/public-contracts#contractingAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.apco.cm/onto#AutoriteContractante> .
+# 
+# https://dbpedia.org/ontology/department
+<https://dbpedia.org/ontology/department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/ontology/department> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<https://dbpedia.org/ontology/department> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/Department> .
+# 
+# https://dbpedia.org/ontology/locationCity
+<https://dbpedia.org/ontology/locationCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/ontology/locationCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<https://dbpedia.org/ontology/locationCity> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/City> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://contsem.unizar.es/def/sector-publico/pproc#numberOfLots
+<http://contsem.unizar.es/def/sector-publico/pproc#numberOfLots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://contsem.unizar.es/def/sector-publico/pproc#numberOfLots> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://contsem.unizar.es/def/sector-publico/pproc#numberOfLots> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://data.apco.cm/onto#dateDeCloture
+<http://data.apco.cm/onto#dateDeCloture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#dateDeCloture> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://data.apco.cm/onto#dateDeCloture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.apco.cm/onto#dateDeCloture> <http://www.w3.org/2000/01/rdf-schema#label> "closing date"@en .
+<http://data.apco.cm/onto#dateDeCloture> <http://www.w3.org/2000/01/rdf-schema#label> "date de clôture"@fr .
+<http://data.apco.cm/onto#dateDeCloture> <http://www.w3.org/2000/01/rdf-schema#label> "property indicating the closing date of a publication"@en .
+<http://data.apco.cm/onto#dateDeCloture> <http://www.w3.org/2000/01/rdf-schema#label> "proprieté indiquant la date de clôture d'une publication"@fr .
+# 
+# http://data.apco.cm/onto#dateDePublication
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/2000/01/rdf-schema#comment> "property indicating the publication date of a Publication"@en .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/2000/01/rdf-schema#comment> "proprieté indiquant la date de publication d'une Publication"@fr .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/2000/01/rdf-schema#label> "date de publication"@fr .
+<http://data.apco.cm/onto#dateDePublication> <http://www.w3.org/2000/01/rdf-schema#label> "publication date"@en .
+# 
+# http://data.apco.cm/onto#dateDeSignature
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating the the date of signing of a publication"@en .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/2000/01/rdf-schema#comment> "Proprieté indiquant la date de signature d'une publication"@fr .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/2000/01/rdf-schema#label> "date de signature"@fr .
+<http://data.apco.cm/onto#dateDeSignature> <http://www.w3.org/2000/01/rdf-schema#label> "signature date"@en .
+# 
+# http://data.apco.cm/onto#designationAutoriteContractante
+<http://data.apco.cm/onto#designationAutoriteContractante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#designationAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#AutoriteContractante> .
+<http://data.apco.cm/onto#designationAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.apco.cm/onto#designationAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#label> "designation contracting autority"@en .
+<http://data.apco.cm/onto#designationAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#label> "désignation autorité contractante"@fr .
+# 
+# http://data.apco.cm/onto#designationMaitreDOuvrage
+<http://data.apco.cm/onto#designationMaitreDOuvrage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#designationMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#MaitreDOuvrage> .
+<http://data.apco.cm/onto#designationMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.apco.cm/onto#designationMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "designation building owner"@en .
+<http://data.apco.cm/onto#designationMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "désignation maître d'ouvrage"@fr .
+# 
+# http://data.apco.cm/onto#heureDeCloture
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/2000/01/rdf-schema#comment> "Property indicating the closing time of a publication"@en .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/2000/01/rdf-schema#comment> "Proprieté indiquant l'heure de clôture d'une publication"@fr .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/2000/01/rdf-schema#label> "closing time"@en .
+<http://data.apco.cm/onto#heureDeCloture> <http://www.w3.org/2000/01/rdf-schema#label> "heure de clôture"@fr .
+# 
+# http://data.apco.cm/onto#idPublication
+<http://data.apco.cm/onto#idPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#idPublication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#idPublication> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://data.apco.cm/onto#idPublication> <http://www.w3.org/2000/01/rdf-schema#label> "id publication"@fr .
+<http://data.apco.cm/onto#idPublication> <http://www.w3.org/2000/01/rdf-schema#label> "publication id"@en .
+# 
+# http://data.apco.cm/onto#montantPrevisionnelduMarche
+<http://data.apco.cm/onto#montantPrevisionnelduMarche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#montantPrevisionnelduMarche> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#montantPrevisionnelduMarche> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://data.apco.cm/onto#montantPrevisionnelduMarche> <http://www.w3.org/2000/01/rdf-schema#label> "estimated amount"@en .
+<http://data.apco.cm/onto#montantPrevisionnelduMarche> <http://www.w3.org/2000/01/rdf-schema#label> "montant prévisionnel du marché"@fr .
+# 
+# http://data.apco.cm/onto#naturePrestation
+<http://data.apco.cm/onto#naturePrestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#naturePrestation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#naturePrestation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.apco.cm/onto#naturePrestation> <http://www.w3.org/2000/01/rdf-schema#label> "nature of service"@en .
+<http://data.apco.cm/onto#naturePrestation> <http://www.w3.org/2000/01/rdf-schema#label> "nature prestation"@fr .
+# 
+# http://data.apco.cm/onto#secteurDActivite
+<http://data.apco.cm/onto#secteurDActivite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#secteurDActivite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#secteurDActivite> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.apco.cm/onto#secteurDActivite> <http://www.w3.org/2000/01/rdf-schema#label> "activity area"@en .
+<http://data.apco.cm/onto#secteurDActivite> <http://www.w3.org/2000/01/rdf-schema#label> "secteur d'activité"@fr .
+# 
+# http://data.apco.cm/onto#sigleAutoriteContractante
+<http://data.apco.cm/onto#sigleAutoriteContractante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#sigleAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#AutoriteContractante> .
+<http://data.apco.cm/onto#sigleAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.apco.cm/onto#sigleAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#label> "acronym prime contractor"@en .
+<http://data.apco.cm/onto#sigleAutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#label> "sigle autorité contractante"@fr .
+# 
+# http://data.apco.cm/onto#sigleMaitreDOuvrage
+<http://data.apco.cm/onto#sigleMaitreDOuvrage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#sigleMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#MaitreDOuvrage> .
+<http://data.apco.cm/onto#sigleMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.apco.cm/onto#sigleMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "acronym building owner"@en .
+<http://data.apco.cm/onto#sigleMaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "sigle maître d'ouvrage"@fr .
+# 
+# http://data.apco.cm/onto#sigleProcedure
+<http://data.apco.cm/onto#sigleProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#sigleProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#sigleProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://data.apco.cm/onto#sourceDeFinancement
+<http://data.apco.cm/onto#sourceDeFinancement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.apco.cm/onto#sourceDeFinancement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Financement> .
+<http://data.apco.cm/onto#sourceDeFinancement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.apco.cm/onto#sourceDeFinancement> <http://www.w3.org/2000/01/rdf-schema#label> "source de financement"@fr .
+<http://data.apco.cm/onto#sourceDeFinancement> <http://www.w3.org/2000/01/rdf-schema#label> "source of funding"@en .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+# 
+# http://purl.org/procurement/public-contracts#procedureType
+<http://purl.org/procurement/public-contracts#procedureType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/procurement/public-contracts#procedureType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.apco.cm/onto#Publication> .
+<http://purl.org/procurement/public-contracts#procedureType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.apco.cm/onto#AppelAManifestationDInterêt
+<http://data.apco.cm/onto#AppelAManifestationDInterêt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelAManifestationDInterêt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#AppelAManifestationDInterêt> <http://www.w3.org/2000/01/rdf-schema#label> "Appel a manifestation d'intérêt"@fr .
+<http://data.apco.cm/onto#AppelAManifestationDInterêt> <http://www.w3.org/2000/01/rdf-schema#label> "Call for expressions of interest"@en .
+# 
+# http://data.apco.cm/onto#AppelDOffre
+<http://data.apco.cm/onto#AppelDOffre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#AppelDOffre> <http://www.w3.org/2000/01/rdf-schema#comment> "contrat ecrit par lequel un entrepreneur, un fournisseur ou un prestataire de service s'engage envers l'etat , une collectivité territoriale décentralisée ou un établissement public soit à réaliser des travaux, soit à fournir des biens et des services moyennant un prix"@fr .
+<http://data.apco.cm/onto#AppelDOffre> <http://www.w3.org/2000/01/rdf-schema#comment> "written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price"@en .
+<http://data.apco.cm/onto#AppelDOffre> <http://www.w3.org/2000/01/rdf-schema#label> "Appel d'offre"@fr .
+<http://data.apco.cm/onto#AppelDOffre> <http://www.w3.org/2000/01/rdf-schema#label> "Public contract"@en .
+<http://data.apco.cm/onto#AppelDOffre> <http://www.w3.org/2000/01/rdf-schema#label> "Tender "@en .
+# 
+# http://data.apco.cm/onto#AppelDOffreAvecConcours
+<http://data.apco.cm/onto#AppelDOffreAvecConcours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffreAvecConcours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffre> .
+# 
+# http://data.apco.cm/onto#AppelDOffreEnDeuxEtapes
+<http://data.apco.cm/onto#AppelDOffreEnDeuxEtapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffreEnDeuxEtapes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffre> .
+# 
+# http://data.apco.cm/onto#AppelDOffreInternationalOuvert
+<http://data.apco.cm/onto#AppelDOffreInternationalOuvert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffreInternationalOuvert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffreOuvert> .
+<http://data.apco.cm/onto#AppelDOffreInternationalOuvert> <http://www.w3.org/2000/01/rdf-schema#comment> "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."@fr .
+<http://data.apco.cm/onto#AppelDOffreInternationalOuvert> <http://www.w3.org/2000/01/rdf-schema#comment> "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders."@en .
+<http://data.apco.cm/onto#AppelDOffreInternationalOuvert> <http://www.w3.org/2000/01/rdf-schema#label> "Appel d'offre international ouvert"@fr .
+<http://data.apco.cm/onto#AppelDOffreInternationalOuvert> <http://www.w3.org/2000/01/rdf-schema#label> "Open international tender"@en .
+# 
+# http://data.apco.cm/onto#AppelDOffreInternationalRestreint
+<http://data.apco.cm/onto#AppelDOffreInternationalRestreint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffreInternationalRestreint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffreRestreint> .
+<http://data.apco.cm/onto#AppelDOffreInternationalRestreint> <http://www.w3.org/2000/01/rdf-schema#comment> "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."@fr .
+<http://data.apco.cm/onto#AppelDOffreInternationalRestreint> <http://www.w3.org/2000/01/rdf-schema#comment> "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders."@en .
+<http://data.apco.cm/onto#AppelDOffreInternationalRestreint> <http://www.w3.org/2000/01/rdf-schema#label> "Appel d'offre international restreint"@fr .
+<http://data.apco.cm/onto#AppelDOffreInternationalRestreint> <http://www.w3.org/2000/01/rdf-schema#label> "Restricted international tender"@en .
+# 
+# http://data.apco.cm/onto#AppelDOffreNationalOuvert
+<http://data.apco.cm/onto#AppelDOffreNationalOuvert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffreNationalOuvert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffreOuvert> .
+<http://data.apco.cm/onto#AppelDOffreNationalOuvert> <http://www.w3.org/2000/01/rdf-schema#comment> "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."@fr .
+<http://data.apco.cm/onto#AppelDOffreNationalOuvert> <http://www.w3.org/2000/01/rdf-schema#comment> "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."@en .
+<http://data.apco.cm/onto#AppelDOffreNationalOuvert> <http://www.w3.org/2000/01/rdf-schema#label> "Appel d'offre national ouvert"@fr .
+<http://data.apco.cm/onto#AppelDOffreNationalOuvert> <http://www.w3.org/2000/01/rdf-schema#label> "Open national tender"@en .
+# 
+# http://data.apco.cm/onto#AppelDOffreOuvert
+<http://data.apco.cm/onto#AppelDOffreOuvert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffreOuvert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffre> .
+<http://data.apco.cm/onto#AppelDOffreOuvert> <http://www.w3.org/2002/07/owl#disjointWith> <http://data.apco.cm/onto#AppelDOffreRestreint> .
+<http://data.apco.cm/onto#AppelDOffreOuvert> <http://www.w3.org/2000/01/rdf-schema#label> "Appel d'offre ouvert"@fr .
+<http://data.apco.cm/onto#AppelDOffreOuvert> <http://www.w3.org/2000/01/rdf-schema#label> "open tender"@en .
+# 
+# http://data.apco.cm/onto#AppelDOffreRestreint
+<http://data.apco.cm/onto#AppelDOffreRestreint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AppelDOffreRestreint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffre> .
+<http://data.apco.cm/onto#AppelDOffreRestreint> <http://www.w3.org/2000/01/rdf-schema#comment> "L’appel d’offres restreint s’adresse désormais à l’ensemble des candidats retenus à l’issue d’une procédure de pré-qualification et non plus à un nombre limité de candidats parmi ceux pré-qualifiés.\n\nLe rapport de pré-qualification, rédigé par le Maître d’Ouvrage ou le Maître d’Ouvrage Délégué et accompagné du projet de dossier d’appel d’offres avec la proposition de listes restreintes, est soumis à la commission des marchés compétente pour examen.\n\nLa procédure d’appel d’offres restreint ne peut être utilisée que dans les cas suivants : (1) travaux ou équipements spécifiques de grande importance ou complexes ; (2) fournitures et services spécialisés ; (3) prestations intellectuelles."@fr .
+<http://data.apco.cm/onto#AppelDOffreRestreint> <http://www.w3.org/2000/01/rdf-schema#comment> "Restricted call for tenders is now addressed to all candidates selected following a pre-qualification procedure and no longer to a limited number of candidates among those pre-qualified.\n\nThe pre-qualification report, drawn up by the Contracting Authority or the Contracting Authority's Representative and accompanied by the draft tender dossier with the proposal for shortlists, is submitted to the competent procurement commission for examination.\n\nThe restricted tendering procedure may only be used in the following cases: (1) specific works or equipment of great importance or complexity; (2) specialized supplies and services; (3) intellectual services."@en .
+<http://data.apco.cm/onto#AppelDOffreRestreint> <http://www.w3.org/2000/01/rdf-schema#label> "Appel d'offre restreint"@fr .
+<http://data.apco.cm/onto#AppelDOffreRestreint> <http://www.w3.org/2000/01/rdf-schema#label> "Restricted tender"@en .
+# 
+# http://data.apco.cm/onto#AutoriteContractante
+<http://data.apco.cm/onto#AutoriteContractante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#AutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<http://data.apco.cm/onto#AutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural person skilled in leading the contracting process and signing the related contracts"@en .
+<http://data.apco.cm/onto#AutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#comment> "Personne physique ou morale habilelé à conduire le processus de contractualisation et de signer les marchés y relatifs"@fr .
+<http://data.apco.cm/onto#AutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#label> "Autorité contractante"@fr .
+<http://data.apco.cm/onto#AutoriteContractante> <http://www.w3.org/2000/01/rdf-schema#label> "Contracting authority"@en .
+# 
+# http://data.apco.cm/onto#ChefDeServiceDuMarche
+<http://data.apco.cm/onto#ChefDeServiceDuMarche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#ChefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural person under public law accredited by the Project Owner or the Delegated Project Owner for general assistance of an administrative, financial and technical nature at the stage of definition, development, execution and acceptance of the services, market objects."@en .
+<http://data.apco.cm/onto#ChefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#comment> "Personne physique de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué pour une assistance générale à caractère administratif, financier et technique au stade de la définition, de l'élaboration, de l'exécution et de la réception des prestations, objets du marché."@fr .
+<http://data.apco.cm/onto#ChefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#label> "Chef de service du marché"@fr .
+<http://data.apco.cm/onto#ChefDeServiceDuMarche> <http://www.w3.org/2000/01/rdf-schema#label> "Market service manager"@en .
+# 
+# http://data.apco.cm/onto#DecisionDAnnulation
+<http://data.apco.cm/onto#DecisionDAnnulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#DecisionDAnnulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#DecisionDAnnulation> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure for canceling a tender"@en .
+<http://data.apco.cm/onto#DecisionDAnnulation> <http://www.w3.org/2000/01/rdf-schema#comment> "Procédure d'annulation d'un appel d'offre"@fr .
+<http://data.apco.cm/onto#DecisionDAnnulation> <http://www.w3.org/2000/01/rdf-schema#label> "Cancellation decision"@en .
+<http://data.apco.cm/onto#DecisionDAnnulation> <http://www.w3.org/2000/01/rdf-schema#label> "Décision d'annulation"@fr .
+# 
+# http://data.apco.cm/onto#DecisionDAttribution
+<http://data.apco.cm/onto#DecisionDAttribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#DecisionDAttribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#DecisionDAttribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure for awarding a call for tenders"@en .
+<http://data.apco.cm/onto#DecisionDAttribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Procédure d'attribution d'un appel d'offre"@fr .
+<http://data.apco.cm/onto#DecisionDAttribution> <http://www.w3.org/2000/01/rdf-schema#label> "Award decision"@en .
+<http://data.apco.cm/onto#DecisionDAttribution> <http://www.w3.org/2000/01/rdf-schema#label> "Décision d'attribution"@fr .
+# 
+# http://data.apco.cm/onto#DemandeDeCotation
+<http://data.apco.cm/onto#DemandeDeCotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#DemandeDeCotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#Publication> .
+<http://data.apco.cm/onto#DemandeDeCotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Procédure simplifiée de consultation d’entreprises pour la passation de certaines lettres-commandes relatives aux fournitures de biens et services ou à toutes autres prestations de moindre envergure ne nécessitant pas l’élaboration d’offres techniques."@fr .
+<http://data.apco.cm/onto#DemandeDeCotation> <http://www.w3.org/2000/01/rdf-schema#comment> "simplified procedure for consulting companies for the awarding of certain job orders relating to the supply of goods and services or to any other smaller-scale services that do not require the preparation of technical offers"@en .
+<http://data.apco.cm/onto#DemandeDeCotation> <http://www.w3.org/2000/01/rdf-schema#label> "APriceQuote"@en .
+<http://data.apco.cm/onto#DemandeDeCotation> <http://www.w3.org/2000/01/rdf-schema#label> "DemandeDeCotation"@fr .
+# 
+# http://data.apco.cm/onto#Financement
+<http://data.apco.cm/onto#Financement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#Financement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://data.apco.cm/onto#estFinancePar> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.apco.cm/onto#Financement> <http://www.w3.org/2000/01/rdf-schema#comment> "Class designating the body responsible for financing a public contract"@en .
+<http://data.apco.cm/onto#Financement> <http://www.w3.org/2000/01/rdf-schema#comment> "Classe désignant l'organe chargé de financer un marché public"@fr .
+<http://data.apco.cm/onto#Financement> <http://www.w3.org/2000/01/rdf-schema#label> "Financement"@fr .
+<http://data.apco.cm/onto#Financement> <http://www.w3.org/2000/01/rdf-schema#label> "Funding"@en .
+# 
+# http://data.apco.cm/onto#IngenieurDuMarche
+<http://data.apco.cm/onto#IngenieurDuMarche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#IngenieurDuMarche> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural or legal person governed by public law accredited by the Project Owner or the Delegated Project Owner, for the monitoring and technical and financial control of the performance of the contract."@en .
+<http://data.apco.cm/onto#IngenieurDuMarche> <http://www.w3.org/2000/01/rdf-schema#comment> "Personne physique ou morale de droit public accréditée par le Maître d'ouvrage ou le Maître d'ouvrage délégué, pour le suivi et le contrôle technique et financier de l'exécution du marché."@fr .
+<http://data.apco.cm/onto#IngenieurDuMarche> <http://www.w3.org/2000/01/rdf-schema#label> "Ingénieur du marché"@fr .
+<http://data.apco.cm/onto#IngenieurDuMarche> <http://www.w3.org/2000/01/rdf-schema#label> "market engineer"@en .
+# 
+# http://data.apco.cm/onto#MaitreDOeuvre
+<http://data.apco.cm/onto#MaitreDOeuvre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#MaitreDOeuvre> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural or legal person governed by public or private law, charged by the contracting authority or the delegated contracting authority to guarantee its interests at the stage of definition, development, management of the execution and acceptance of the provision of market objects."@en .
+<http://data.apco.cm/onto#MaitreDOeuvre> <http://www.w3.org/2000/01/rdf-schema#comment> "Personne physique ou morale de droit public ou privé, chargée par le maître d'ouvrage ou le maître d'ouvrage déléguéde garantir ses intérêts au stade de la définition, de l'élaboration, de la direction de l'exécution et de la reception des prestation objets du marché."@fr .
+<http://data.apco.cm/onto#MaitreDOeuvre> <http://www.w3.org/2000/01/rdf-schema#label> "Project manager"@en .
+<http://data.apco.cm/onto#MaitreDOeuvre> <http://www.w3.org/2000/01/rdf-schema#label> "maître d'oeuvre"@fr .
+# 
+# http://data.apco.cm/onto#MaitreDOuvrage
+<http://data.apco.cm/onto#MaitreDOuvrage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#MaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#comment> "Chef de département ministériel ou assimilé, chef de l'exécutif d'une collectivité territoriale décentralisée, et directeur général d'un établissement public, représentant l'administration bénéficiaire des prestations prévues dans le marché."@fr .
+<http://data.apco.cm/onto#MaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "Building owner"@en .
+<http://data.apco.cm/onto#MaitreDOuvrage> <http://www.w3.org/2000/01/rdf-schema#label> "Maître d'ouvrage"@fr .
+# 
+# http://data.apco.cm/onto#Offre
+<http://data.apco.cm/onto#Offre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#Offre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/goodrelations/v1#Offering> .
+<http://data.apco.cm/onto#Offre> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensemble de documents administratifs, techniques et financiers constituant la proposition du soumissionaire"@fr .
+<http://data.apco.cm/onto#Offre> <http://www.w3.org/2000/01/rdf-schema#comment> "set of administrative, technical and financial documents constituting the tenderer's proposal"@en .
+<http://data.apco.cm/onto#Offre> <http://www.w3.org/2000/01/rdf-schema#label> "Offre"@fr .
+<http://data.apco.cm/onto#Offre> <http://www.w3.org/2000/01/rdf-schema#label> "Tender"@en .
+# 
+# http://data.apco.cm/onto#Prestataire
+<http://data.apco.cm/onto#Prestataire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#Prestataire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#Soumissionnaire> .
+<http://data.apco.cm/onto#Prestataire> <http://www.w3.org/2000/01/rdf-schema#comment> "Personne physique ou morale, titulaire d'un marché public"@fr .
+<http://data.apco.cm/onto#Prestataire> <http://www.w3.org/2000/01/rdf-schema#label> "Prestataire"@fr .
+<http://data.apco.cm/onto#Prestataire> <http://www.w3.org/2000/01/rdf-schema#label> "Provider"@en .
+# 
+# http://data.apco.cm/onto#Publication
+<http://data.apco.cm/onto#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "La classe publication désigne l'ensemble des documents qui sont publié dans le journal des marchés publics."@fr .
+<http://data.apco.cm/onto#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "The publication class designates all the documents that are published in the public procurement journal"@en .
+<http://data.apco.cm/onto#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Communiqué"@fr .
+<http://data.apco.cm/onto#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@en .
+<http://data.apco.cm/onto#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@fr .
+# 
+# http://data.apco.cm/onto#Soumissionnaire
+<http://data.apco.cm/onto#Soumissionnaire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#Soumissionnaire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<http://data.apco.cm/onto#Soumissionnaire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://data.apco.cm/onto#faitUneOffre> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.apco.cm/onto#Soumissionnaire> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural person who made a bid to the contracting authority"@en .
+<http://data.apco.cm/onto#Soumissionnaire> <http://www.w3.org/2000/01/rdf-schema#comment> "Personne physique aui fait une offre à l'endroit de l'autorité contractante"@fr .
+<http://data.apco.cm/onto#Soumissionnaire> <http://www.w3.org/2000/01/rdf-schema#label> "Soumissionnaire"@fr .
+<http://data.apco.cm/onto#Soumissionnaire> <http://www.w3.org/2000/01/rdf-schema#label> "Tenderer"@en .
+# 
+# http://data.apco.cm/onto#appelDoffre_national_restreint
+<http://data.apco.cm/onto#appelDoffre_national_restreint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.apco.cm/onto#appelDoffre_national_restreint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.apco.cm/onto#AppelDOffreRestreint> .
+<http://data.apco.cm/onto#appelDoffre_national_restreint> <http://www.w3.org/2000/01/rdf-schema#comment> "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."@fr .
+<http://data.apco.cm/onto#appelDoffre_national_restreint> <http://www.w3.org/2000/01/rdf-schema#comment> "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."@en .
+<http://data.apco.cm/onto#appelDoffre_national_restreint> <http://www.w3.org/2000/01/rdf-schema#label> "Appel d'offre national restreint"@fr .
+<http://data.apco.cm/onto#appelDoffre_national_restreint> <http://www.w3.org/2000/01/rdf-schema#label> "Restricted national tender"@en .
+# 
+# http://purl.org/goodrelations/v1#BusinessEntity
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/goodrelations/v1#Offering
+<http://purl.org/goodrelations/v1#Offering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://dbpedia.org/ontology/City
+<https://dbpedia.org/ontology/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://dbpedia.org/ontology/Department
+<https://dbpedia.org/ontology/Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://dbpedia.org/ontology/Region
+<https://dbpedia.org/ontology/Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://atemezing.org
+<http://atemezing.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://atemezing.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# https://linkedin.com/in/etienne-kouokam-18a24913
+<https://linkedin.com/in/etienne-kouokam-18a24913> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://linkedin.com/in/etienne-kouokam-18a24913> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# https://linkedin.com/in/jules-quentin-kouamo-99259921a
+<https://linkedin.com/in/jules-quentin-kouamo-99259921a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://linkedin.com/in/jules-quentin-kouamo-99259921a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
