@@ -87,7 +87,7 @@ apco:Prestataire
 <http://purl.org/procurement/public-contracts#contractingAuthority>
   a owl:ObjectProperty, owl:AsymmetricProperty ;
   rdfs:domain apco:Publication ;
-  rdfs:range apco:AutoriteContractante> .
+  rdfs:range apco:AutoriteContractante .
 
 <https://dbpedia.org/ontology/department>
   a owl:ObjectProperty ;
