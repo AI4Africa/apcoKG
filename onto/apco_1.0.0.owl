@@ -17,7 +17,6 @@
         <dcterms:description xml:lang="fr">APCO est une ontologie a qui permet la description des termes des marchés publics</dcterms:description>
         <dcterms:description xml:lang="en">APCO is an ontology a that allows the description of public procurement terms</dcterms:description>
         <dcterms:title>African Public Contract Ontology</dcterms:title>
-
         <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
