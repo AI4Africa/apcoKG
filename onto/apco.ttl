@@ -210,7 +210,7 @@ apco:AppelAManifestationDInteret
   rdfs:subClassOf apco:Publication ;
   rdfs:label "Appel a manifestation d'intérêt"@fr, "Call for expressions of interest"@en .
 
-apco:AppelDOffre>
+apco:AppelDOffre
   a owl:Class ;
   rdfs:subClassOf apco:Publication ;
   rdfs:comment "contrat ecrit par lequel un entrepreneur, un fournisseur ou un prestataire de service s'engage envers l'etat , une collectivité territoriale décentralisée ou un établissement public soit à réaliser des travaux, soit à fournir des biens et des services moyennant un prix"@fr, "written contract by which a contractor, a supplier or a service provider undertakes towards the state, a decentralized territorial community or a public establishment either to carry out work, or to provide goods and services for a price"@en ;
@@ -228,7 +228,7 @@ apco:AppelDOffreEnDeuxEtapes
 
 apco:AppelDOffreInternationalOuvert
   a owl:Class ;
-  rdfs:subClassOf apco:AppelDOffreOuvert> ;
+  rdfs:subClassOf apco:AppelDOffreOuvert ;
   rdfs:comment "La procédure d’appel d’offres international  est recommandée pour la passation des marchés de Services et Prestations Intellectuelles de montant supérieur à cent (100) millions de F CFA ou lorsqu’il n’existe pas de compétence au niveau local pour la réalisation des prestations objet de l’appel d’offres."@fr, "The international competitive bidding procedure is recommended for the award of contracts for Services and Intellectual Benefits of an amount greater than one hundred (100) million CFA francs or when there is no competence at the local level for the performance of the services covered by the call for tenders."@en ;
   rdfs:label "Appel d'offre international ouvert"@fr, "Open international tender"@en .
 
@@ -240,7 +240,7 @@ apco:AppelDOffreInternationalRestreint
 
 apco:AppelDOffreNationalOuvert
   a owl:Class ;
-  rdfs:subClassOf apco:AppelDOffreOuvert> ;
+  rdfs:subClassOf apco:AppelDOffreOuvert ;
   rdfs:comment "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."@fr, "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."@en ;
   rdfs:label "Appel d'offre national ouvert"@fr, "Open national tender"@en .
 
@@ -347,7 +347,7 @@ apco:Soumissionnaire
 
 apco:appelDoffre_national_restreint
   a owl:Class ;
-  rdfs:subClassOf apco:AppelDOffreRestreint> ;
+  rdfs:subClassOf apco:AppelDOffreRestreint ;
   rdfs:comment "La procédure d’appel d’offres national (AON) est recommandée pour la passation des marchés publics de travaux ou de fournitures qui, en raison de leur nature ou de leur ampleur, ont peu de chance d’intéresser les candidats étrangers du fait que : (1) les montants en jeu sont peu élevés ; (2) les travaux sont dispersés ou étalés dans le temps ; (3) les travaux nécessitent une haute intensité de main d’œuvre ; (4)les biens ou les travaux peuvent être fournis localement à des prix inférieurs à ceux du marché international."@fr, "The National Competitive Bidding (NCB) procedure is recommended for awarding public contracts for works or supplies which, due to their nature or scale, are unlikely to interest foreign candidates because : (1) the amounts involved are low; (2) the work is dispersed or spread over time; (3) the works require a high labor intensity; (4) the goods or works can be supplied locally at prices lower than those on the international market."@en ;
   rdfs:label "Appel d'offre national restreint"@fr, "Restricted national tender"@en .
 
