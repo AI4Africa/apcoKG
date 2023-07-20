@@ -41,9 +41,10 @@ apco:attribue
   rdfs:label "assigns"@en, "attribue"@fr .
 
 apco:attribueA
-  a owl:ObjectProperty, owl:TransitiveProperty ;
+  a owl:ObjectProperty;
+  rdfs:label "attribuer à "@fr, "assign to"@en ; 
   rdfs:domain apco:MaitreDOuvrage ;
-  rdfs:range apco:restataire ;
+  rdfs:range apco:Prestataire ;
   rdfs:comment "Property indicating to whom an owner assigns a tender"@fr, "Proprieté indiquant à qui un maître d'ouvrage attribue un appel d'offre"@fr .
 
 apco:chefDeServiceDuMarche
@@ -67,7 +68,7 @@ apco:faitUneOffre
   rdfs:comment "Property indicating the offer made by a bidder. (cardinality 0..1)"@en, "Proprieté indiquant l'offre faite par un soumissionnaire. (cardinalité 0..1)"@fr ;
   rdfs:label "fait ne Offre"@fr, "make an Offer"@en .
 
-apco:Prestataire
+apco:prestataire
   a owl:ObjectProperty, owl:AsymmetricProperty ;
   rdfs:domain apco:Publication ;
   rdfs:range apco:Prestataire ;
@@ -107,6 +108,8 @@ apco:Prestataire
 apco:dateDeCloture
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:subPropertyOf dc:date ;
+  rdfs:domain apco:Publication ;
+   rdfs:range xsd:dateTime ;
   rdfs:label "closing date"@en, "date de clôture"@fr, "property indicating the closing date of a publication"@en, "proprieté indiquant la date de clôture d'une publication"@fr .
 
 apco:dateDePublication
@@ -186,6 +189,7 @@ apco:sigleMaitreDOuvrage
 apco:sigleProcedure
   a owl:DatatypeProperty ;
   rdfs:domain apco:Publication ;
+  rdfs:label "acronym procedure"@en, "sigle procédure"@fr .
   rdfs:range xsd:string .
 
 apco:sourceDeFinancement
